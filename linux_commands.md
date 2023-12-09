@@ -2,7 +2,8 @@
 * `sudo apt update`
 * `sudo apt install <package_name>`
 <br> <br>
-# Useful Commands
+# 60+ Commands from NetworkChuck
+**Source**: [NetworkChuck's Video](https://www.youtube.com/watch?v=gd7BXuUQ91w)
 1. `ssh <username>@<ip>`
 2. 
     * `ls` 
@@ -83,4 +84,6 @@
     * `sudo systemctl stop <service>` : Stop a service
 60. `history` : History of all the commands
 61. `sudo reboot`
-62. `sudo shutdown`
+62. * `sudo shutdown`
+    * `sudo shutdown -h now` : Shutdown now
+63. `exit`
