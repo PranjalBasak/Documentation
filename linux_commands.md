@@ -71,9 +71,10 @@
 49. `neofetch` : Prettier version (Install using `sudo apt install neofetch`)
 50. `cal` : Calender
 51. `echo "4+5+6` | bc` : Calculator
-52. `free` : How much free memory you have
+52. * `free` : How much free memory you have
+    * `free -h` : Better Format
 53. * `df` : How much disk space you have
-    * `df -H`
+    * `df -H` : Better format
 54. * `ps` : Learn about your system processes
     * `ps -aux` : More detailed
 55. `top` : Top processes
