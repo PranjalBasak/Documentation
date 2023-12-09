@@ -92,3 +92,38 @@
 # Awk CheatSheet
 1. `awk '{print $1}' <file.txt>` : prints the first column taking space as the seperator by default
 2. `awk -F ":" '{print $1}' /etc/passwd` : prints the first column taking colon(:) as the field seperator
+3. `awk -F ":" '{print $1"\t"$3"\t"$5}' /etc/passwd` : Using "\t" inbetween to seperate the columns in output
+4. `awk {/^/ print} <file>`
+
+## Regex
+1. ^ -> Start of the line
+2. $ -> End of the line
+3. Dot(.) -> Match on any symbol
+4. a* = b, a, aa, aaa : Matches 0 or more occurrences
+5. a+ = a, aa, aaa... : Matches 1 or more occurrences
+6. a? = a, b but not aa : Matches 0 or 1 occurrence
+7. * `/da{2,3}ta/` : daata, daaata
+    * `/da{2,}ta/` : 2 or more a's
+    * `/da{,3}ta/` : 3 or less a's
+    * `/da{2}/` : daata / exactly 2 a's
+8. `awk '/^.*$/ {print}` <file>: Matches everything 
+9. `(aa)` : It is a group
+10. `(aa)+` : aa, aaaa, aaaaaa (2,4,6)
+11. * The pattern `[aeiou]` matches any single vowel.
+    * The pattern `[0-9]` matches any single digit.
+    * The pattern `[a-z]` matches any single lowercase letter.
+    * The pattern `[A-Z]` matches any single uppercase letter.
+12. Escape character is backslash(\). '\.' will match dot(.).
+13. `\n` matches a new line
+14. `\t` matches a tab
+15. `/[a-zA-Z0-9]/`
+16. `awk $1 ~ \is\ {print $1}` : If the first column contains "is", print the first column
+17. `!~` means the opposite
+18. `^a-z` : Anything but characters in the range a-z
+19. `\d` : Any digit
+20. `\D` : Any non-digit
+
+### Practice Regex
+* https://regex101.com/
+
+
