@@ -88,3 +88,7 @@
 62. * `sudo shutdown`
     * `sudo shutdown -h now` : Shutdown now
 63. `exit`
+
+# Awk CheatSheet
+1. `awk '{print $1}' <file.txt>` : prints the first column taking space as the seperator by default
+2. `awk -F ":" '{print $1}' /etc/passwd` : prints the first column taking colon(:) as the field seperator
