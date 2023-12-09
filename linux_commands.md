@@ -122,8 +122,12 @@
 18. `^a-z` : Anything but characters in the range a-z
 19. `\d` : Any digit
 20. `\D` : Any non-digit
+21. `\b` : Word boundary
+22. `\w` : Word (Any unicode character). Alternative to [a-zA-Z0-9]
+23. `\W` : Not a word
 
 ### Practice Regex
 * https://regex101.com/
+* https://regexr.com/
 
 
