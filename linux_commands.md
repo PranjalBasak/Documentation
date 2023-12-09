@@ -32,3 +32,9 @@
 20. `sudo adduser <user>` : More interactive
 21. `su <different_user>` : Switches to a different user
 22. `sudo passwd <username>` : Changes user password
+23. `man <command>`
+24. `whatis <something>`
+25. `wget <url>` : Download
+26. `curl <url> > <download.extension>`
+27. `zip <zipped.zip> <to_be_zippe.extension>`
+28. 
