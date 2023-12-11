@@ -53,7 +53,7 @@
 37. `chown <user> <file>` : Changing ownership of a file
 38. `ifconfig` : Finds IP Info (Install with `sudo apt install net-tools`)
 39.  `ip address`
-40. `grep <text_to_find> <file_where_to_look>` : Finds a text in a file
+40. `grep <pattern_to_match> <file_where_to_look>` : Finds a text in a file
 41. `awk '{print $1}'`
 42. `resolvectl status` : Finds the DNS Server
 43. * `ping www.google.com`
@@ -102,6 +102,8 @@
 8. `awk 'BEGIN{FS=":'; OFS=","} {print $1,$2}' <file.txt>` : Using both input and output field seperator
 9. `BEGIN{RS="|"}` : An input record seperator
 10. `BEGIN{ORS=","}` : An output record seperator
+11. `{print NF}` : Prints number of fields by record
+12. `{print NR}` : Prints number of records
 
 ## Regex
 1. ^ -> Start of the line
