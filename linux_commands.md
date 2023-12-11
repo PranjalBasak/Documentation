@@ -100,6 +100,8 @@
 6. `awk --profile <code> file.txt` : Generates a `awkprof.out` file
 7. `BEGIN{FS=","}` : Input field seperator changed to comma
 8. `awk 'BEGIN{FS=":'; OFS=","} {print $1,$2}' <file.txt>` : Using both input and output field seperator
+9. `BEGIN{RS="|"}` : An input record seperator
+10. `BEGIN{ORS=","}` : An output record seperator
 
 ## Regex
 1. ^ -> Start of the line
