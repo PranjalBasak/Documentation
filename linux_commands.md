@@ -90,6 +90,7 @@
 63. `exit`
 
 # Awk CheatSheet
+`awk 'BEGIN {print "Starting"} {print $1} END {print "Ending"}' {file.txt}`
 1. `awk '{print $1}' <file.txt>` : prints the first column taking space as the seperator by default
 2. `awk -F ":" '{print $1}' /etc/passwd` : prints the first column taking colon(:) as the field seperator
 3. `awk -F ":" '{print $1"\t"$3"\t"$5}' /etc/passwd` : Using "\t" inbetween to seperate the columns in output
