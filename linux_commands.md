@@ -97,6 +97,9 @@
 3. `awk -F ":" '{print $1"\t"$3"\t"$5}' /etc/passwd` : Using "\t" inbetween to seperate the columns in output
 4. `awk {/^/ print} <file>`
 5. `awk -f <code.awk> <file.txt>`
+6. `awk --profile <code> file.txt` : Generates a `awkprof.out` file
+7. `BEGIN{FS=","}` : Input field seperator changed to comma
+8. `awk 'BEGIN{FS=":'; OFS=","} {print $1,$2}' <file.txt>` : Using both input and output field seperator
 
 ## Regex
 1. ^ -> Start of the line
