@@ -53,7 +53,7 @@
 37. `chown <user> <file>` : Changing ownership of a file
 38. `ifconfig` : Finds IP Info (Install with `sudo apt install net-tools`)
 39.  `ip address`
-40. `grep <pattern_to_match> <file_where_to_look>` : Finds a text in a file
+40. `egrep <pattern_to_match> <file_where_to_look>` : Finds a text in a file
 41. `awk '{print $1}'`
 42. `resolvectl status` : Finds the DNS Server
 43. * `ping www.google.com`
