@@ -105,6 +105,7 @@
 10. `BEGIN{ORS=","}` : An output record seperator
 11. `{print NF}` : Prints number of fields by record
 12. `{print NR}` : Prints number of records
+13. `awk 'BEGIN{OFS="\t"} {print $2, $3}' data.txt | sort -n -k1`
 
 ## Regex
 1. ^ -> Start of the line
