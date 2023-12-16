@@ -1,4 +1,12 @@
-### Error-Based
+## Finding the Database Version
+**MySQL and MSSQL**
+',nickName=@@version,email='
+** For Oracle **
+',nickName=(SELECT banner FROM v$version),email='
+** For SQLite **
+',nickName=sqlite_version(),email='
+
+## Error-Based
 * `CASE
     WHEN condition1 THEN result1
     WHEN condition2 THEN result2
