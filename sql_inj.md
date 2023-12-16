@@ -90,6 +90,12 @@ If it shows a welcome page, there is an user named administrator
 
 https://www.youtube.com/watch?v=LBG_n9fr8sM
 
+**************Lab 14:**************
+<br>  <br>
+`TrackingId=' || pg_sleep(10)-- -`
+
 **Lab 15:**
 
 Use “Response Received” column from intruder and use it to sort the characters that took the most time
+
+https://portswigger.net/web-security/sql-injection/cheat-sheet
