@@ -6,5 +6,7 @@
 <br><br>
 ## Certificate Materials
 [Google Cyber Security Certificate](google_cert.md)
+<br> <br>
 ## CTF Materials
+[Tools](ctf_tools.md)
 [CTF Learn](www.ctflearn.com)
