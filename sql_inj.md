@@ -1,9 +1,9 @@
 ## Finding the Database Version
-**MySQL and MSSQL** <br>
-`',nickName=@@version,email='` 
-** For Oracle ** <br>
-`',nickName=(SELECT banner FROM v$version),email='`
-** For SQLite ** <br>
+**MySQL and MSSQL** 
+`',nickName=@@version,email='` <br>
+**For Oracle** 
+`',nickName=(SELECT banner FROM v$version),email='`<br>
+**For SQLite** 
 `',nickName=sqlite_version(),email='`
 
 ## Error-Based
