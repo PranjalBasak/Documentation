@@ -1,3 +1,27 @@
+## Common tools¶
+
+    * Burp Suite: Introduction to Burp Suite
+
+    * Tamper Data (Firefox addon)
+
+    * HackBar (Firefox addon)
+
+    * sqlmap: sqlmap user manual
+
+## Injecting common parameters¶
+
+    user(): current database user
+    database(): current database name
+    version(): the currently used database version
+    @@datadir: database storage data path
+    concat(): Union data used to combine two data results. Such as concat(username,0x3a,password)
+    group_concat(): Similar to concat(), such as group_concat(DISTINCT+user, 0x3a, password), used to inject multiple pieces of data at once
+    concat_ws(): usage is similar
+    hex() and unhex(): for hex encoding and decoding
+    load_file(): Read the file as text. In Windows, the path is set to \\
+    select xxoo into outfile &#39;path&#39;: can write files directly when the permission is high
+
+
 ## Finding the Database Version
 **MySQL and MSSQL** 
 `',nickName=@@version,email='` <br>
