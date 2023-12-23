@@ -9,4 +9,4 @@
 * less
 * echo
 * awk
-* 
+* md5sum
