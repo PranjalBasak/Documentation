@@ -142,3 +142,4 @@ Use “Response Received” column from intruder and use it to sort the characte
 ## CheatSheets
 * [Portswigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
 * [Advanced SQL Injection](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet)
+* [CTF-Wiki](https://ctf-wiki.mahaloz.re/web/sqli/)
