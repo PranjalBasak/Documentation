@@ -49,6 +49,7 @@
     * `sudo find <path> -type f -name ".*"` : Finds hidden files
     * `find <path> -type f -empty` : Finds empty directories
     * `find <path> -perm /a=x`
+    * `find <path> -user <user> -group <group> -size <size>c
 36. `chmod +x <file>` : Making the file executable
 37. `chown <user> <file>` : Changing ownership of a file
 38. `ifconfig` : Finds IP Info (Install with `sudo apt install net-tools`)
