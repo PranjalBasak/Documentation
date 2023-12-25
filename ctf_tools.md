@@ -21,3 +21,5 @@
 * bunzip2 (decompress)
 * tar -xf <file.tar> (restore archived file)
 * ssh -i <private_key> <user@server> -p <port>
+* ssh, telnet, nc, openssl, s_client, nmap
+* nc host port
