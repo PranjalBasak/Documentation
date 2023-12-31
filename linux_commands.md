@@ -1,6 +1,9 @@
 # Resources and Online Tools
 * [Crontab Generator](https://crontab-generator.org/)
 * [Cron Guru](https://crontab.guru/)
+* **Pre-Defined Expressions:**
+     * regexlib.com
+     * regularexpressions.info
 
 # Important
 * `sudo apt update`
