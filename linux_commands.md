@@ -1,8 +1,12 @@
+# Resources and Online Tools
+* [Crontab Generator](https://crontab-generator.org/)
+* [Cron Guru](https://crontab.guru/)
+
 # Important
 * `sudo apt update`
 * `sudo apt install <package_name>`
 <br> <br>
-# 60+ Commands from NetworkChuck
+# 60+ Commands from NetworkChuck (Personally Added More!)
 **Source**: [NetworkChuck's Video](https://www.youtube.com/watch?v=gd7BXuUQ91w)
 1. `ssh <username>@<ip>`
 2. 
@@ -90,6 +94,7 @@
 62. * `sudo shutdown`
     * `sudo shutdown -h now` : Shutdown now
 63. `exit`
+64. `crontab -e`
 
 # Awk CheatSheet
 `awk` has a `BEGIN` block, a codeblock and an `END` block <br><br>
