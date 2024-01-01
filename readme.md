@@ -18,3 +18,30 @@
 ## CTF Materials
 * [Tools](ctf_tools.md)
 * [CTF Learn](www.ctflearn.com)
+
+## TryHackMe Path Order
+1. Introduction to Cyber Security Path
+
+2. Pre Security Path playlist: 
+
+3. Complete Beginner Path
+
+4. Web Fundamentals Path
+
+5. Security Engineer
+
+6. SOC Level 1 Path
+
+7. SOC Level 2 Path
+
+8. Jr Penetration Tester Path
+
+9. Offensive Pentesting Path
+
+10. Red Teaming Path
+
+11. Cyber Defense Path
+
+12. Attacking and Defending AWS
+
+13. CompTIA Pentest+ Path
