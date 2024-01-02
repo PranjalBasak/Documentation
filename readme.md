@@ -27,6 +27,9 @@ TryHackMe Path:
 * [SecLists](https://github.com/danielmiessler/SecLists)
 * **Kali Linux** -> `/usr/share/webshells`
 
+## Simplify Privilege Escalation
+* gtfobins.github.io
+
 
 
 ## Extra/Minor:
