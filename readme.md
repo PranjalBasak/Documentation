@@ -12,6 +12,9 @@ TryHackMe Path:
 ## Web Security
 [SQL Injection](sql_inj.md)
 
+## Shells
+[Shells](Shells.md)
+
 ## CTF Materials
 * [Tools](ctf_tools.md)
 * [CTF Learn](www.ctflearn.com)
