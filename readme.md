@@ -28,7 +28,7 @@ TryHackMe Path:
 * **Kali Linux** -> `/usr/share/webshells`
 
 ## Simplify Privilege Escalation
-* gtfobins.github.io
+* https://gtfobins.github.io
 
 
 
