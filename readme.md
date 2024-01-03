@@ -33,6 +33,9 @@ TryHackMe Path:
 ## Simplify Privilege Escalation
 * https://gtfobins.github.io
 
+## Research CVEs and Exploits
+[Exploit-DB](https://www.exploit-db.com/)
+
 
 
 ## Extra/Minor:
