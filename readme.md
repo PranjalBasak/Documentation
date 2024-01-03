@@ -17,7 +17,7 @@ TryHackMe Path:
 
 ## CTF Materials
 * [Tools](ctf_tools.md)
-* [CTF Learn](www.ctflearn.com)
+* [CTF Learn](https://www.ctflearn.com)
 -------------------------------------------------------------------------------------------------------------
 
 <br><br>
