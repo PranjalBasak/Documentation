@@ -1,5 +1,5 @@
 # Source Documentation
-# My Cyber Security Goal : Red Teamer
+## Career Path : Red Teamer
 TryHackMe Path:
 * [JR Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
 * [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
@@ -29,12 +29,34 @@ TryHackMe Path:
 * [PentestMonkey](https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 * [SecLists](https://github.com/danielmiessler/SecLists)
 * **Kali Linux** -> `/usr/share/webshells`
+* **My Parrot OS** -> `/usr/share/wordlists/SecLists/Web-Shells`
 
 ## Simplify Privilege Escalation
 * https://gtfobins.github.io
 
 ## Research CVEs and Exploits
 [Exploit-DB](https://www.exploit-db.com/)
+### For `python2` exploits: 
+You need to first install the following packages:
+```bash
+apt install 2to3
+apt install python3-lib2to3
+apt install python3-toolz
+```
+For windows just install 2to3
+```cmd
+pip install 2to3
+```
+Then, You can simply go to that directory your python file is in and type the following command:
+```bash
+2to3 ./filename.py
+```
+
+OR for writing the updated python 3 code to the existing file
+```bash
+2to3 . -w
+```
+This last will convert all the python files that are in the directory.
 
 
 
