@@ -1,4 +1,6 @@
 # Source Documentation
+## Copy & Attack
+[My Default Attacks](Copy&Attack.md)
 ## Career Path : Red Teamer
 TryHackMe Path:
 * [JR Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
