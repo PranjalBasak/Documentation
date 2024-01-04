@@ -90,6 +90,9 @@ This last will convert all the python files that are in the directory.
 12. Attacking and Defending AWS
 
 13. CompTIA Pentest+ Path
+
+<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7148366612616687616" height="856" width="504" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+
 ### GSM Hacking
 * [YouTube Channel](https://www.youtube.com/@RobVK8FOES)
 * [Rumble [in case the channel gets banned]](https://rumble.com/user/RobVK8FOES)
