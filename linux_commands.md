@@ -151,4 +151,10 @@
 * https://regex101.com/
 * https://regexr.com/
 
+## Linux Distros
+### Access DarkWeb
+* Use Tails OS
+### Making Bootable Thumb Drive
+* Balena Itchr (NetworkChuck Recommends)
+* Rufus (Personally Used)
 
