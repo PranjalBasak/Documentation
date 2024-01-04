@@ -4,6 +4,8 @@
 * **Pre-Defined Expressions:**
      * regexlib.com
      * regularexpressions.info
+# Other Repositories
+* [Linux-Bash-Commands](https://github.com/PranjalBasak/Linux-Bash-Commands)
 
 # Important
 * `sudo apt update`
