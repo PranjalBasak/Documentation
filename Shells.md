@@ -5,10 +5,14 @@
 * **Kali Linux** -> `/usr/share/webshells`
 * **My Parrot OS** -> `/usr/share/wordlists/SecLists/Web-Shells`
 
+
+
+# Illustrating Shells using NetCat
+
 <p align="left">
     <img width="500" src="https://silviavali.github.io/assets/img/SLAE/bindreverse.png" alt="Material Bread logo">
 </p>
-# Illustrating Shells using NetCat
+
 ## Reverse Shell
 ### On the attacking machine
 ```bash
