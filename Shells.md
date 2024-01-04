@@ -17,13 +17,7 @@
 
 # Illustrating Shells using NetCat
 
-<p align="left">
-    <img width="500" src="https://silviavali.github.io/assets/img/SLAE/bindreverse.png" alt="Material Bread logo">
-</p>
-
-<div style="background-color: #222222; padding: 10px; display: inline-block;">
-  ![Your Image Description](your-image-url.png)
-</div>
+![bindreverse-removebg-preview](https://github.com/PranjalBasak/Documentation/assets/66166653/115194d8-e7a9-425e-a1fc-fe555c16b0b4)
 
 
 ## Reverse Shell
