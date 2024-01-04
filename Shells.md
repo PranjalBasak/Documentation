@@ -5,7 +5,15 @@
 * **Kali Linux** -> `/usr/share/webshells`
 * **My Parrot OS** -> `/usr/share/wordlists/SecLists/Web-Shells`
 
+## Tools
+* Netcat
+* Socat
+* Metasploit Multihandler
+* Msfvenom
 
+## Types of Shells
+* Reverse Shell
+* Bind Shell
 
 # Illustrating Shells using NetCat
 
