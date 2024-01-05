@@ -8,13 +8,12 @@ Solving 20 Problems on Each Cyber Security Topic by Dec 31, 2023
 
 
 ## Web Security
-### XSS Injection
 
 | Problem/Lab | Status |
 |-------------|--------|
-| CTF 1   | ![######------](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
-| CTF 2   | ![#####-------](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
-| CTF 3   | ![########----](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
+| XSS Injection   | ![######------](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
+| SQL Injection  | ![#####-------](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
+| IDOR   | ![########----](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
 | ...         | ...    |
 | Problem 20  | ![##########](https://progress-bar.dev/100/?title=completed&color=4CAF50) |
 
