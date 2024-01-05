@@ -19,7 +19,7 @@ Welcome to my Capture The Flag (CTF) learning journey! Here, I document the chal
 
 ## Web Application Security
 ### XSS
-##### CTF 1 : XSS-GAMES.APPSPOT
+##### CTF 1 : [XSS-GAMES.APPSPOT](https://medium.com/@onehackman/learning-xss-part-1-reflected-xss-brief-concept-techniques-challenge-walkthrough-85f6b165541b)
 **Level 1**
 ```javascript
 <script>alert()</script>
