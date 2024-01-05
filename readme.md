@@ -2,11 +2,6 @@
 [WorkStack](https://github.com/PranjalBasak/Documentation/blob/main/WorkStack.md)
 ## Copy & Attack
 [My Default Attacks](Copy&Attack.md)
-## Career Path : Red Teamer
-TryHackMe Path:
-* [JR Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
-* [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
-* [Red Teamer](https://tryhackme.com/path/outline/redteaming)
 
 -----------------------------------------------------------------------------------------------------------
 ## Linux Fundamentals
@@ -19,7 +14,8 @@ TryHackMe Path:
 ## Shells
 [Shells](Shells.md)
 
-## CTF Materials
+## CTF 
+* [CTF Dojo](ctfdojo.md)
 * [My CTF Journey](my_ctf_journey.md)
 * [Tools](ctf_tools.md)
 * [CTF Learn](https://www.ctflearn.com)
@@ -66,6 +62,12 @@ This last will convert all the python files that are in the directory.
 
 
 ## Extra/Minor:
+### Career Path : Red Teamer
+TryHackMe Path:
+* [JR Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
+* [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
+* [Red Teamer](https://tryhackme.com/path/outline/redteaming)
+* 
 ### TryHackMe Path Order
 **Note** : Path Designed for A Beginner wishing to Explore All the Fields of Cyber Security
 1. Introduction to Cyber Security Path
