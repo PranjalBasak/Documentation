@@ -19,6 +19,7 @@ TryHackMe Path:
 [Shells](Shells.md)
 
 ## CTF Materials
+* [My CTF Journey](my_ctf_journey.md)
 * [Tools](ctf_tools.md)
 * [CTF Learn](https://www.ctflearn.com)
 -------------------------------------------------------------------------------------------------------------
