@@ -1,44 +1,34 @@
-# Source Documentation
+# /Root
 [WorkStack](https://github.com/PranjalBasak/Documentation/blob/main/WorkStack.md)
-## Copy & Attack
-[My Default Attacks](Copy&Attack.md)
 
------------------------------------------------------------------------------------------------------------
-## Linux Fundamentals
-[Useful Commands](linux_commands.md)
-
-## Web Security
-- [SQL Injection](sql_inj.md)
-- [XSS Injection](xss.md)
-
-## Shells
-[Shells](Shells.md)
-
-## CTF 
+## /CTF 
 * [CTF Dojo](ctfdojo.md)
 * [My CTF Journey](my_ctf_journey.md)
 * [Tools](ctf_tools.md)
 * [CTF Learn](https://www.ctflearn.com)
--------------------------------------------------------------------------------------------------------------
+* 
+## /Copy & Attack
+[My Default Attacks](Copy&Attack.md)
 
-<br><br>
-## Certificate Materials
-[Google Cyber Security Certificate](google_cert.md)
+-----------------------------------------------------------------------------------------------------------
+## /Linux Fundamentals
+[Useful Commands](linux_commands.md)
 
-## Repository on Shells
-* [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
-* [PentestMonkey](https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
-* [SecLists](https://github.com/danielmiessler/SecLists)
-* **Kali Linux** -> `/usr/share/webshells`
-* **My Parrot OS** -> `/usr/share/wordlists/SecLists/Web-Shells`
+## /Web Security
+- [SQL Injection](sql_inj.md)
+- [XSS Injection](xss.md)
 
-## Simplify Privilege Escalation
-* https://gtfobins.github.io
+## /Privilege Escalation
+- [Shells](Shells.md)
+- [Privilege Escalation CheatSheet](https://gtfobins.github.io)
 
-## Research CVEs and Exploits
+## /Research CVEs and Exploits
 [Exploit-DB](https://www.exploit-db.com/)
 ### For `python2` exploits: 
-You need to first install the following packages:
+<details>
+  <summary>****Click to expand****</summary>
+
+  You need to first install the following packages:
 ```bash
 apt install 2to3
 apt install python3-lib2to3
@@ -59,10 +49,22 @@ OR for writing the updated python 3 code to the existing file
 ```
 This last will convert all the python files that are in the directory.
 
+</details>
 
 
-## Extra/Minor:
-### Career Path : Red Teamer
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
+## /Extra/Minor:
+<details>
+  <summary>Click to expand</summary>
+
+  ## Certificate Materials
+[Google Cyber Security Certificate](google_cert.md)
+
+  ### Career Path : Red Teamer
 TryHackMe Path:
 * [JR Penetration Tester](https://tryhackme.com/path/outline/jrpenetrationtester)
 * [Offensive Pentesting](https://tryhackme.com/path/outline/pentesting)
@@ -101,3 +103,7 @@ TryHackMe Path:
 ### GSM Hacking
 * [YouTube Channel](https://www.youtube.com/@RobVK8FOES)
 * [Rumble [in case the channel gets banned]](https://rumble.com/user/RobVK8FOES)
+
+
+</details>
+
