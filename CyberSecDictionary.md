@@ -1,0 +1,1 @@
+- PoC = A proof of concept (PoC) exploit is a non-harmful attack against a computer or network.
