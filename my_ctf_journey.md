@@ -2,11 +2,10 @@
 
 Welcome to my Capture The Flag (CTF) learning journey! Here, I document the challenges I've solved and the skills I've gained in the world of cybersecurity.
 
-## Topics
 
-### Network Security
+## Network Security
 
-#### CTF 1
+### CTF 1
 
 **Tools:**
 - Nmap
@@ -18,10 +17,15 @@ Welcome to my Capture The Flag (CTF) learning journey! Here, I document the chal
 
 ---
 
-### Web Application Security
+## Web Application Security
+### XSS
+##### CTF 1  
+```javascript
+<script>alert()</script>
+```
 
-#### CTF 2
 
+##### CTF 2
 **Tools:**
 - Burp Suite
 - OWASP Zap
@@ -32,9 +36,9 @@ Welcome to my Capture The Flag (CTF) learning journey! Here, I document the chal
 
 ---
 
-### Cryptocurrency Security
+## Cryptocurrency Security
 
-#### CTF 3
+### CTF 3
 
 **Tools:**
 - Ganache
