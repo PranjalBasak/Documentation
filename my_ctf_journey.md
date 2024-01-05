@@ -30,6 +30,15 @@ Welcome to my Capture The Flag (CTF) learning journey! Here, I document the chal
 <img src=x onerror=alert(1)>
 ```
 
+**Level 3**
+```javascript
+https://xss-game.appspot.com/level3/frame#23' onerror=alert()>
+```
+
+```javascript
+23' onerror=alert()>
+```
+
 ##### CTF 2
 **Tools:**
 - Burp Suite
