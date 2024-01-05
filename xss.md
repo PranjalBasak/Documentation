@@ -1,5 +1,5 @@
-
 # Payloads
+[Dedicated XSS Payloads Page](https://github.com/PranjalBasak/Documentation/blob/main/mindless_xss_payloads.md)
 ## What is a payload?
 
 In XSS, the payload is the JavaScript code we wish to be executed on the targets computer. There are two parts to the payload, the intention and the modification.
