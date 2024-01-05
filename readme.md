@@ -12,7 +12,8 @@ TryHackMe Path:
 [Useful Commands](linux_commands.md)
 
 ## Web Security
-[SQL Injection](sql_inj.md)
+- [SQL Injection](sql_inj.md)
+- [XSS Injection](xss.md)
 
 ## Shells
 [Shells](Shells.md)
