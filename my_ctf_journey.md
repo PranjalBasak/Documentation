@@ -25,6 +25,10 @@ Welcome to my Capture The Flag (CTF) learning journey! Here, I document the chal
 <script>alert()</script>
 ```
 
+**Level 2**
+```javascript
+<img src=x onerror=alert(1)>
+```
 
 ##### CTF 2
 **Tools:**
