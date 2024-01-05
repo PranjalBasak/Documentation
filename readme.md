@@ -17,6 +17,7 @@
 ## /Web Security
 - [SQL Injection](sql_inj.md)
 - [XSS Injection](xss.md)
+- [Tools](webtools.md)
 
 ## /Privilege Escalation
 - [Shells](Shells.md)
