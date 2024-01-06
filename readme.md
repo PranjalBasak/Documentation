@@ -4,7 +4,7 @@
 ## /CTF 
 * [CTF Dojo](ctfdojo.md)
 * [My CTF Journey](my_ctf_journey.md)
-* [Tools](ctf_tools.md)
+* [Hacking Tools](ctf_tools.md)
 * [CTF Learn](https://www.ctflearn.com)
 * 
 ## /Copy & Attack
