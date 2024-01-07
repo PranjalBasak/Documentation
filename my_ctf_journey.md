@@ -49,6 +49,10 @@ https://xss-game.appspot.com/level3/frame#23' onerror=alert()>
 javascript:alert()
 ```
 
+**Level 6**
+```javascript
+frame#data:text/plain,alert()
+```
 ##### CTF 2
 **Tools:**
 - Burp Suite
