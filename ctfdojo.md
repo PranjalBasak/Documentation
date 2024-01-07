@@ -11,7 +11,7 @@ Solving 20 Problems on Each Cyber Security Topic by Dec 31, 2023 11:59 PM
 
 | Problem/Lab | Status |
 |-------------|--------|
-| XSS Injection   | ![######------](https://progress-bar.dev/15/?title=Progress&color=4CAF50) |
+| XSS Injection   | ![######------](https://progress-bar.dev/30/?title=Progress&color=4CAF50) |
 | SQL Injection  | ![#####-------](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
 | IDOR   | ![########----](https://progress-bar.dev/0/?title=Null&color=4CAF50) |
 | ...         | ...    |
