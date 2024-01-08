@@ -17,7 +17,7 @@
 ## /Web Security
 - [SQL Injection](sql_inj.md)
 - [XSS Injection](xss.md) | [JavaScript CheatSheet](https://htmlcheatsheet.com/js/)
-- [Tools](webtools.md)
+- [Tools](webtools.md) | [Scripting With Python](script_with_python.md)
 
 ## /Privilege Escalation
 - [Shells](Shells.md)
