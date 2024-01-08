@@ -17,3 +17,5 @@ with open(r"D:\bloop\file1.txt.txt", "r") as f:
 f.readlines()
 ```
 
+# OS Module
+[Full List of Methods and Constants](https://www.w3schools.com/python/module_os.asp)
