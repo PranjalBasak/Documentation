@@ -1,3 +1,5 @@
+[Black Hat Python](https://github.com/EONRaider/blackhat-python3)
+
 # File Handling
 ## Read
 ### Read The Whole File At Once
