@@ -11,5 +11,6 @@
 | Delete the Entire Line Before Cursor      | Ctrl + U                  |
 | Delete the Entire Line After Cursor       | Ctrl + K                  |
 | Search Previously Used Commands           | Ctrl + R                  |
+| Close the Current Tab                     | Ctrl + Shift + W          |
 
 CheatSheet: https://cheatography.com/davechild/cheat-sheets/linux-command-line/
