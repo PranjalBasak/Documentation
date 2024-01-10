@@ -12,7 +12,8 @@
 
 -----------------------------------------------------------------------------------------------------------
 ## /Linux Fundamentals
-[Useful Commands](linux_commands.md)
+- [Useful Commands](linux_commands.md)
+- [Terminal Shorcuts](https://github.com/PranjalBasak/Documentation/blob/main/Linux_Shortcuts.md)
 
 ## /Web Security
 - [SQL Injection](sql_inj.md)
