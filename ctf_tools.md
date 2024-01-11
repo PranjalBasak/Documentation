@@ -27,7 +27,7 @@
 
 # Networking
 - `nslookup` : DNS Lookup
-
+- [cURL](curl_cheatSheet.md)
 
 # Pentesting Tools
 •  Exploits Database:
