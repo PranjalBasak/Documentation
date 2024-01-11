@@ -25,6 +25,9 @@
 * ssh, telnet, nc, openssl, s_client, nmap
 * nc host port
 
+# Networking
+- `nslookup` : DNS Lookup
+
 
 # Pentesting Tools
 •  Exploits Database:
