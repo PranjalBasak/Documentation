@@ -30,6 +30,31 @@
 - [cURL](curl_cheatSheet.md)
 -[Nmap](https://www.stationx.net/nmap-cheat-sheet/) | With Built-In Command Generator in this Link
 
+# Web Tools (By Zisan Bhai)
+- Burp Suite - Framework.
+- ZAP Proxy - Framework.
+- Dirsearch - HTTP bruteforcing.
+- Nmap - Port scanning.
+- Sublist3r - Subdomain discovery.
+- Amass - Subdomain discovery.
+- SQLmap - SQLi exploitation.
+- Metasploit - Framework.
+- WPscan - WordPress exploitation.
+- Nikto - Webserver scanning.
+- HTTPX - HTTP probing.
+- Nuclei - YAML based template scanning.
+- FFUF - HTTP probing.
+- Subfinder - Subdomain discovery.
+- Masscan - Mass IP and port scanner.
+- Lazy Recon - Subdomain discovery.
+- XSS Hunter - Blind XSS discovery.
+- Aquatone - HTTP based recon.
+- LinkFinder - Endpoint discovery through JS files.
+- JS-Scan - Endpoint discovery through JS files.
+- GAU - Historical attack surface mapping.
+- Parameth - Bruteforce GET and POST parameters.
+- truffleHog - Find credentials in GitHub commits.
+
 # Pentesting Tools
 •  Exploits Database:
 
