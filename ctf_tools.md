@@ -28,7 +28,7 @@
 # Networking
 - `nslookup` : DNS Lookup
 - [cURL](curl_cheatSheet.md)
--[Nmap](https://www.stationx.net/nmap-cheat-sheet/) | With Built-In Command Generator in this Link
+- [Nmap](https://www.stationx.net/nmap-cheat-sheet/) | With Built-In Command Generator in this Link
 
 # Web Tools (By Zisan Bhai)
 - Burp Suite - Framework.
