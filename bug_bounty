@@ -1,0 +1,27 @@
+== Target ==
+2 https://zephr.fish
+3
+4 == Interesting Ports ==
+5 3306 - MySQL
+6 60893 - Memcache
+7 8080 - Possible Web application
+8 60001 - Possible Application or DB
+9
+10 == Web Applications Running ==
+11 8080 - Apache Tomcat
+12 60001 - Adobe Coldfusion
+13
+14 == Possible Attacks ==
+15 RCE - ColdFusion(zephr.fish:60001)
+16 XXE - ColdFusion(zephr.fish:60001)
+17 XSS - Main Domain(zephr.fish:80)
+
+https://shubhamrooter.medium.com/mastering-bug-bounty-hunting-a-comprehensive-methodology-by-shubham-tiwari-f5a9399e78c
+
+httpprobe
+anew
+ffuf
+waybackurls
+gf
+
+https://github.com/The-XSS-Rat/SecurityTesting
