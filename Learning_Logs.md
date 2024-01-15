@@ -17,3 +17,37 @@
 
 ## 15
 https://www.stationx.net/sqlmap-cheat-sheet/
+### SQLMAP
+- 6 Techniques
+- `--crawl 3` : Depth -> 3
+- `--batch` : Default
+- `--technique="U"` : Union Attack
+- `--threads` : Saves time
+- `--risk 1/2/3`
+- `--level 1/2/3/4/5` : Increases range of vulnerabilites/Increases false positive
+- `-V 1/2/3/4/5`
+- ![image](https://github.com/PranjalBasak/Documentation/assets/66166653/9b1f8674-9aa1-44b7-9c7f-ca4a83f87839)
+
+- `--current-user`
+- `--current-db`
+- `--hostname`
+- `--dbs` : Show all Database details
+- `-D <database_name> --tables` : Show tables
+- `-T <table_name> --dump` : Show data of `<table_name>`
+- `-D <db> -T <table> --columns` : Show all the columns of `<table>`
+- `-D <db> --dump-all` : Dump all the data of database `<db>`
+- `--output-dir=<url>`
+- `--headers="Referer:abc.com" -v 4 --batch`
+- `--user-agent="GECKO_Chrome" -v 4 --batch`
+- `--mobile -v 4 --batch` : Pretending to be a mobile user agent
+- `--list-tampers` : Lists WAF Bypass Techniques
+- `--tamper=base64encode -v 3 --batch`
+- `--forms`: Sends data to a form
+- `--data="uname=abc&pass=abc&login=submit" --dbs`
+- `--proxy="127.0.0.1:4444"` : Can use burpsuite
+- `-r abc --batch`
+-  `--cookie`
+-  `--flush-session` : Clears SQLi sessions so that we can use new payloads
+-  `--comment` : Brings hidden comments
+-  `--os-shell` : Brings command shell
+-  `--os-cmd`
