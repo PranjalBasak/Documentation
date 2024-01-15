@@ -14,3 +14,6 @@
 
 **Motivation:** Uploading a malicious JS script so that an admin views it and his cookies are sent to my server so that I can hijack his session. <br>
 **Note:** All session tokens are cookies but no all cookies are session tokens.
+
+## 15
+https://www.stationx.net/sqlmap-cheat-sheet/
