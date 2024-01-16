@@ -57,3 +57,9 @@ https://www.stationx.net/sqlmap-cheat-sheet/
 ```bash
 docker run --rm -it -p 80:80 vulnerables/web-dvwa
 ```
+
+```bash
+python3 /bin/sqlmap/sqlmap.py
+```
+
+
