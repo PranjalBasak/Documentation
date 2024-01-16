@@ -51,3 +51,9 @@ https://www.stationx.net/sqlmap-cheat-sheet/
 -  `--comment` : Brings hidden comments
 -  `--os-shell` : Brings command shell
 -  `--os-cmd`
+
+## 16 Jan
+
+```bash
+docker run --rm -it -p 80:80 vulnerables/web-dvwa
+```
