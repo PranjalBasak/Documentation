@@ -62,7 +62,22 @@ docker run --rm -it -p 80:80 vulnerables/web-dvwa
 python3 /bin/sqlmap/sqlmap.py
 ```
 
-```
+Resources to Learn and Practice
+https://nmap.org/book/man.html
+https://nmap.org/docs.html
+https://hackertarget.com/nmap-cheatsheet-a-quick.../
+https://hackertarget.com/nmap-tutorial/
+https://www.stationx.net/nmap-cheat-sheet/
+https://media.x-ra.de/doc/NmapCheatSheetv1.1.pdf
+https://www.100security.com.br/netdiscover
+https://kalilinuxtutorials.com/netdiscover-scan-live.../
+https://www.youtube.com/watch?v=PS677owUk-c
+https://www.stationx.net/nmap-cheat-sheet/
+https://redteamtutorials.com/2018/10/14/nmap-cheatsheet/
+https://resources.infosecinstitute.com/nmap-cheat-sheet/...
+https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
+[https://resources.infosecinstitute.com/network.../...
+](https://resources.infosecinstitute.com/network-discovery-tool/?fbclid=IwAR0SzhZwp6lbIuxRzjcyxREzOcdN5J1wyvCu4RpnkBEYZPKogLl9YDmb3wQ#gref)https://resources.infosecinstitute.com/network-discovery-tool/?fbclid=IwAR0SzhZwp6lbIuxRzjcyxREzOcdN5J1wyvCu4RpnkBEYZPKogLl9YDmb3wQ#gref
 0x207c20
 ```
 
