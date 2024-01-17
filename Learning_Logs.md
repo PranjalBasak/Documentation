@@ -94,4 +94,6 @@ https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
 - `dpkg -s <pkg_name>`
 - `apt-cache search <description of the pkg>` : Look for a package to install
 
+[Bash Scripting CheatSheet](https://devhints.io/bash)
+
 
