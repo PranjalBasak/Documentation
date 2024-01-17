@@ -89,5 +89,8 @@ https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
 ### Useful Commands
 - `umask 0777` : Remove all of rwx permission from ugo
 - `chgrp <group> <file/dir>` : Change the group of a file or directory
+- `touch dir/{1,2,3}`
+- `dpkg -l`
+- `dpkg -s <pkg_name>`
 
 
