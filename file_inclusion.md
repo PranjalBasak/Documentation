@@ -23,3 +23,11 @@
 **Risk:** 
 <br> An attacker can access any file in the web server or the operating system including source code using the vulnerablity. 
 <br> They can even perform RCE by uploading their own files to the server.
+
+## Path Traversal
+AKA _**Directory Traversal/Dot-Dot-Slash Attack**_ <br>
+This attack allows a hacker unauthorized access to operating system filee outside the web application's root directory.
+
+**Example:** `http://webapp.thm/get.php?file=../../../../etc/passwd`
+
+![image](https://github.com/PranjalBasak/Documentation/assets/66166653/eab139b1-d196-46eb-87f7-952d3f212e60)
