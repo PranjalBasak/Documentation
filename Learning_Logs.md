@@ -92,5 +92,6 @@ https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
 - `touch dir/{1,2,3}`
 - `dpkg -l`
 - `dpkg -s <pkg_name>`
+- `apt-cache search <description of the pkg>` : Look for a package to install
 
 
