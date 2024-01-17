@@ -83,10 +83,11 @@ https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
 
 ## 17 Jan
 `chmod 1777`
-- 1 : Sticky Bit
-- 2 : SGID -> Set GID Bit
-- 3 : SUID -> Set UID Bit
-
-`umask 0777` : Remove all of rwx permission from ugo
+- 1 : Sticky Bit -> Allows the deletion of a file within a directory
+- 2 : SGID -> Set GID Bit -> Gives the files within the directory the group owner of the directory rather than the group owner of the file
+- 3 : SUID -> Set UID Bit -> Used for Scripts to allow them to use sudo privileges
+### Useful Commands
+- `umask 0777` : Remove all of rwx permission from ugo
+- `chgrp <group> <file/dir>` : Change the group of a file or directory
 
 
