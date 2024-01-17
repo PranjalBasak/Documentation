@@ -79,6 +79,14 @@ https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
 [https://resources.infosecinstitute.com/network.../...
 ](https://resources.infosecinstitute.com/network-discovery-tool/?fbclid=IwAR0SzhZwp6lbIuxRzjcyxREzOcdN5J1wyvCu4RpnkBEYZPKogLl9YDmb3wQ#gref)https://resources.infosecinstitute.com/network-discovery-tool/?fbclid=IwAR0SzhZwp6lbIuxRzjcyxREzOcdN5J1wyvCu4RpnkBEYZPKogLl9YDmb3wQ#gref
 0x207c20
-```
+
+
+## 17 Jan
+`chmod 1777`
+- 1 : Sticky Bit
+- 2 : SGID -> Set GID Bit
+- 3 : SUID -> Set UID Bit
+
+`umask 0777` : Remove all of rwx permission from ugo
 
 
