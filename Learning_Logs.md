@@ -133,3 +133,33 @@ udp        0      0 0.0.0.0:123             0.0.0.0:*                           
 
 In cybersecurity, vulnerabilities are classified under **“Common Vulnerabilities and Exposures”** (Or CVE for short).
 These CVEs have the formatting of `CVE-YEAR-IDNUMBER`. For example, the vulnerability that the famous malware WannaCry used was `CVE-2017-0144`.
+
+### Nmap Port Scan Types
+
+When port scanning with Nmap, there are three basic scan types:
+
+1. **TCP Connect Scans (-sT):** Establishes a full connection to the target's ports.
+
+2. **SYN "Half-open" Scans (-sS):** Initiates a SYN scan, also known as a stealth scan, by sending SYN packets to target ports.
+
+3. **UDP Scans (-sU):** Focuses on UDP ports, which are connectionless and less reliable than TCP.
+
+Additionally, there are several less common port scan types:
+
+- **TCP Null Scans (-sN):** Sends packets with no TCP flags set.
+
+- **TCP FIN Scans (-sF):** Sends packets with only the FIN flag set.
+
+- **TCP Xmas Scans (-sX):** Sends packets with the FIN, PSH, and URG flags set, creating a "Christmas tree" pattern.
+
+**Open Port:**
+
+![image](https://github.com/PranjalBasak/Documentation/assets/66166653/6de32c6e-560e-4ac2-ad40-e37210261850)
+
+**Closed Port:**
+
+![image](https://github.com/PranjalBasak/Documentation/assets/66166653/baabe6c2-77a6-437e-8629-4b0670976922)
+
+
+
+
