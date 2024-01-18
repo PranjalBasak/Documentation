@@ -96,4 +96,32 @@ https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
 
 [Bash Scripting CheatSheet](https://devhints.io/bash)
 
+## 18 Jan
+- httpd is the same as apache2
 
+### Netstat
+
+```markdown
+# Netstat Cheatsheet: Display TCP and UDP Connections
+
+## Command:
+```bash
+netstat -tulpen
+```
+
+## Options:
+- **`-t`**: Display TCP connections.
+- **`-u`**: Display UDP connections.
+- **`-l`**: Display listening sockets.
+- **`-p`**: Show the process ID and name for the involved programs.
+- **`-e`**: Display additional information. (Note: This might be replaced by `-n` for faster output without hostname resolution.)
+
+## Example Output:
+```bash
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       User       Inode      PID/Program name
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      0          123456     789/sshd
+tcp        0      0 127.0.0.1:5432          0.0.0.0:*               LISTEN      0          789012     1234/postgres
+udp        0      0 0.0.0.0:123             0.0.0.0:*                           0          567890     456/ntpd
+...
+```
