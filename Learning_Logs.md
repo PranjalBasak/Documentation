@@ -130,3 +130,6 @@ udp        0      0 0.0.0.0:123             0.0.0.0:*                           
 ### Vulnerability Databases
 1. [NVD (National Vulnerability Database)](https://nvd.nist.gov/vuln)
 2. [Exploit-DB](http://exploit-db.com/)
+
+In cybersecurity, vulnerabilities are classified under **“Common Vulnerabilities and Exposures”** (Or CVE for short).
+These CVEs have the formatting of `CVE-YEAR-IDNUMBER`. For example, the vulnerability that the famous malware WannaCry used was `CVE-2017-0144`.
