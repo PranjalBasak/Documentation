@@ -160,6 +160,9 @@ Additionally, there are several less common port scan types:
 
 ![image](https://github.com/PranjalBasak/Documentation/assets/66166653/baabe6c2-77a6-437e-8629-4b0670976922)
 
+***SYN Scan:*** Half-Open Scan/Stealth Scan
 
+![image](https://github.com/PranjalBasak/Documentation/assets/66166653/626b837d-8b2e-41ae-92e0-6424fc1f862e)
 
+**Note:** SYN scans are the default scans used by Nmap if run with sudo permissions. If run without sudo permissions, Nmap defaults to the TCP Connect scan
 
