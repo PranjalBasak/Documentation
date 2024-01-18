@@ -122,3 +122,7 @@ tcp        0      0 127.0.0.1:5432          0.0.0.0:*               LISTEN      
 udp        0      0 0.0.0.0:123             0.0.0.0:*                           0          567890     456/ntpd
 ...
 ```
+
+### Scoring Vulnerabilities
+- CVSS (Common Vulnerability Scoring System)
+- VPR (Vulnerability Priority Rating)
