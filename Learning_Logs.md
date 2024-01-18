@@ -126,3 +126,7 @@ udp        0      0 0.0.0.0:123             0.0.0.0:*                           
 ### Scoring Vulnerabilities
 - CVSS (Common Vulnerability Scoring System)
 - VPR (Vulnerability Priority Rating)
+
+### Vulnerability Databases
+1. [NVD (National Vulnerability Database)](https://nvd.nist.gov/vuln)
+2. [Exploit-DB](http://exploit-db.com/)
