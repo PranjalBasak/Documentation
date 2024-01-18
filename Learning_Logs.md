@@ -99,10 +99,7 @@ https://medium.com/.../nmap-cheat-sheet-nmap-scanning...
 ## 18 Jan
 - httpd is the same as apache2
 
-### Netstat
-
-```markdown
-# Netstat Cheatsheet: Display TCP and UDP Connections
+### Netstat Cheatsheet: Display TCP and UDP Connections
 
 ## Command:
 ```bash
