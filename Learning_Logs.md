@@ -209,3 +209,57 @@ Example:
 # find . -perm /644
 ```
 Here, the files can be either read and writtable by the owner (6) or writtable by the group owner (4) or writtable by others (4). All of these conditions do not necessarily be true together. As long as any of them is true, it should be enough.
+
+Certainly! Here's your text formatted for GitHub Markdown:
+
+```markdown
+## Find Files Based on Their Permissions Using Symbolic Notation
+
+In the following examples, we use symbolic notations such as `u` (for user), `g` (group), `o` (others). We can also use the letter `a` to represent all three of these categories. The permissions can be specified using letters `r` (read), `w` (write), `x` (executable).
+
+For instance, to find any file with group write permission, run:
+
+```bash
+$ find . -perm -g=w
+```
+
+As you see in the above example, `file1` and `file2` have group write permission. Please note that you can use either "=" or "+" operators for symbolic notation. For example, the following two commands will do the same thing.
+
+```bash
+$ find . -perm -g=w
+$ find . -perm -g+w
+```
+
+To find any file that is writable by the file owner, run:
+
+```bash
+$ find . -perm -u=w
+```
+
+To find any file that is writable by all (the file owner, group, and everyone else), run:
+
+```bash
+$ find . -perm -a=w
+```
+
+To find files that are writable by both their owner and their group, use this command:
+
+```bash
+$ find . -perm -g+w,u+w
+```
+
+The above command is equivalent to the "find . -perm -220" command.
+
+To find files that are writable by either their owner or their group, run:
+
+```bash
+$ find . -perm /u+w,g+w
+```
+
+Or,
+
+```bash
+$ find . -perm /u=w,g=w
+```
+
+Feel free to copy and paste this into your GitHub Markdown section!
