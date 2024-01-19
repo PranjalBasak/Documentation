@@ -166,3 +166,46 @@ Additionally, there are several less common port scan types:
 
 **Note:** SYN scans are the default scans used by Nmap if run with sudo permissions. If run without sudo permissions, Nmap defaults to the TCP Connect scan
 
+## 19 Jan
+`sudo netdiscover -i eth0` : Using ARP to scan hosts in a network using network interface `eth0`
+
+
+
+
+## Find resource permissions by using absolute mode
+
+The most fundamental permissions search uses no additional parameters. The statement reads as "find a resource with these permissions."
+
+For example:
+
+```bash
+# find /etc -perm 777
+```
+
+The command is: Search the `/etc` directory for resources with the 777 access level (rwx for all identities).
+
+The above example only finds resources with exactly the specified permission—no more and no less. What if you need a little more flexibility? There are two additional parameters that can be very useful. The first is the `-` character (dash), and the second is the `/` character (slash). Let's look at both.
+
+### Find by `-`
+
+The use of the `-` option means "at least this permission level is set, and any higher permissions."
+
+Example:
+
+```bash
+# find . -perm -644
+# Permission 644 or higher
+```
+
+This example displays all resources in the current directory with at least 644 permissions.
+
+### Find by `/`
+
+The use of the `/` option means "any of the permissions listed are set." (either or relationship)
+
+Example:
+
+```bash
+# find . -perm /644
+```
+
