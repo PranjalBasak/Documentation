@@ -197,7 +197,7 @@ Example:
 # Permission 644 or higher
 ```
 
-This example displays all resources in the current directory with at least 644 permissions.
+This example displays all resources in the current directory with at least 644 permissions. That means the file must have read and write access for the file owner, write access for the group ownder and write access for others. This is the bare minimum but higher permission is welcome.
 
 ### Find by `/`
 
@@ -208,4 +208,4 @@ Example:
 ```bash
 # find . -perm /644
 ```
-
+Here, the files can be either read and writtable by the owner (6) or writtable by the group owner (4) or writtable by others (4). All of these conditions do not necessarily be true together. As long as any of them is true, it should be enough.
