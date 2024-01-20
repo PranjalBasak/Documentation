@@ -327,6 +327,10 @@ A more exhaustive list can be found [here](https://nmap.org/book/nse-usage.html)
 - Find NSE scripts: `/usr/share/nmap/scripts/*<search>*` or search online
 
 ## 20 Jan
+### Passive Reconnaissance
+- `whois`
+- `nslookup`
+- `dig`
 - `DNSDumpster` : A Website that Finds out subdomains of a domain
 - `shodan.io` : Gives us the following information on a website:
   - IP address
@@ -343,4 +347,6 @@ A more exhaustive list can be found [here](https://nmap.org/book/nse-usage.html)
 | Lookup DNS A records          | `dig tryhackme.com A`                   |
 | Lookup DNS MX records at DNS server | `dig @1.1.1.1 tryhackme.com MX`      |
 | Lookup DNS TXT records        | `dig tryhackme.com TXT`                 |
+
+
 
