@@ -325,3 +325,12 @@ A more exhaustive list can be found [here](https://nmap.org/book/nse-usage.html)
 [Detailed Firewall Evasion](https://nmap.org/book/man-bypass-firewalls-ids.html)
 
 - Find NSE scripts: `/usr/share/nmap/scripts/*<search>*` or search online
+
+## 20 Jan
+- `DNSDumpster` : A Website that Finds out subdomains of a domain
+- `shodan.io` : Gives us the following information on a website:
+  - IP address
+  - hosting company
+  - geographic location
+  - server type and version
+
