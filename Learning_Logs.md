@@ -358,3 +358,44 @@ A more exhaustive list can be found [here](https://nmap.org/book/nse-usage.html)
 - telnet
 - netcat
 
+**Note:** TTL indicates the maximum number of routers/hops that a packet can pass through before being dropped; TTL is not a maximum number of time units.
+
+#### Telnet
+```bash
+telnet <ip> <port>
+```
+One can use telnet to access any service running on TCP and even exchange messages unless it uses encryption.
+After connecting, we can send
+
+```bash
+GET / HTTP/1.1
+host:telnet
+```
+This way we can grab banners of a service or a system.
+
+#### Netcat
+Netcat will create a simple TCP/UDP server or client. Whatever you type on client side will be echoed to server side and vice versa. Netcat is a simple way to grab a banner.
+
+**Start A Listener/Server:**
+```bash
+nc -lvnp <port>
+```
+
+**Connect to A Server:**
+```bash
+nc <ip> <port>
+```
+Afterwards:
+```bash
+GET / HTTP/1.1
+host: netcat
+```
+
+| Option | Meaning                                      |
+|--------|----------------------------------------------|
+| -l     | Listen mode                                  |
+| -p     | Specify the Port number                      |
+| -n     | Numeric only; no resolution of hostnames via DNS |
+| -v     | Verbose output (optional, yet useful to discover any bugs) |
+| -vv    | Very Verbose (optional)                      |
+| -k     | Keep listening after client disconnects      |
