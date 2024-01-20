@@ -348,5 +348,13 @@ A more exhaustive list can be found [here](https://nmap.org/book/nse-usage.html)
 | Lookup DNS MX records at DNS server | `dig @1.1.1.1 tryhackme.com MX`      |
 | Lookup DNS TXT records        | `dig tryhackme.com TXT`                 |
 
-
+### Active Reconnaissance
+- Web Browser
+  - FoxyProxy
+  - User-Agent Switcher and Manager
+  - Wappalyzer
+- ping ( `ping -c 10 <host>` )
+- traceroute
+- telnet
+- netcat
 
