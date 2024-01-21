@@ -13,22 +13,12 @@
 [My Default Attacks](Copy&Attack.md)
 
 -----------------------------------------------------------------------------------------------------------
-## /Linux Fundamentals
-- [Useful Commands](linux_commands.md)
-- [Terminal Shorcuts](https://github.com/PranjalBasak/Documentation/blob/main/Linux_Shortcuts.md)
-
-## /Web Security
-- [SQL Injection](sql_inj.md)
-- [XSS Injection](xss.md) | [JavaScript CheatSheet](https://htmlcheatsheet.com/js/)
-- [Tools](webtools.md) | [Scripting With Python](script_with_python.md)
-
-## /Privilege Escalation
-- [Shells](Shells.md)
-- [Privilege Escalation CheatSheet](https://gtfobins.github.io)
-
-## /Research CVEs and Exploits
+## Reconnaissance
+- [Recon](recon.md)
+-  
+### /Research CVEs and Exploits
 [Exploit-DB](https://www.exploit-db.com/)
-### For `python2` exploits: 
+#### For `python2` exploits: 
 <details>
   <summary>****Click to expand****</summary>
 
@@ -54,6 +44,27 @@ OR for writing the updated python 3 code to the existing file
 This last will convert all the python files that are in the directory.
 
 </details>
+
+## /Exploitation
+- [File Inclusion](file_inclusion.md)
+- [SQL Injection](sql_inj.md)
+- [XSS Injection](xss.md) | [JavaScript CheatSheet](https://htmlcheatsheet.com/js/)
+- [Command Injection](command_injection.md)
+
+## /Privilege Escalation
+- [Shells](Shells.md)
+- [Privilege Escalation CheatSheet](https://gtfobins.github.io)
+- 
+## /Linux Fundamentals
+- [Useful Commands](linux_commands.md)
+- [Terminal Shorcuts](https://github.com/PranjalBasak/Documentation/blob/main/Linux_Shortcuts.md)
+
+## /Web Tools
+- [Tools](webtools.md) | [Scripting With Python](script_with_python.md)
+
+
+
+
 
 
 
