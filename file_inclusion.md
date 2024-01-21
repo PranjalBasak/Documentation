@@ -52,3 +52,9 @@ THE PHP code uses a GET request via the URL parameter `lang` to include the file
 - `http://webapp.thm/index.php?lang=AR.php`
 But a malicious actor can read any file from the server using the vulnerable parameter `lang`, if there is no input validation and no directory specified in the `include` function. So an attacker can do:
 `http://webapp.thm/get.php?file=/etc/passwd`
+
+### Case 2:
+Use Null Bytes if the PHP code is configured in such a way that it will only accept a certain extension (such as only .php). In this case, a sample payload would be:
+`http://webapp.thm/index.php?lang=../../../../etc/passwd%00`
+Null byte will tell the PHP code to ignore anything after the null byte including the extension.
+
