@@ -28,6 +28,27 @@
 AKA _**Directory Traversal/Dot-Dot-Slash Attack**_ <br>
 This attack allows a hacker unauthorized access to operating system filee outside the web application's root directory.
 
+In PHP, you can use the [`file_get_contents`](https://www.php.net/manual/en/function.file-get-contents.php) to read the content of a file.
+
 **Example:** `http://webapp.thm/get.php?file=../../../../etc/passwd`
 
 ![image](https://github.com/PranjalBasak/Documentation/assets/66166653/eab139b1-d196-46eb-87f7-952d3f212e60)
+
+## Local File Inclusion (LFI)
+LFI is a vulnerability which allows attackers to retrive local files hosted in a web server and even execute malicious codes.
+
+LFI can occur in web applications written in PHP, ASP, JSP, or even Node.js. In PHP, some functions contribute to the vulnerability of web applications including `include`, `require`, `include_once`, and `require_once`.
+
+### Case 1:
+Let's say we have an web app which can switch between English and Arabian language. The PHP code is written as follows:
+```php
+<?PHP 
+	include($_GET["lang"]);
+?>
+```
+
+THE PHP code uses a GET request via the URL parameter `lang` to include the file of the page. We should have two kinds of requests:
+- `http://webapp.thm/index.php?lang=EN.php`
+- `http://webapp.thm/index.php?lang=AR.php`
+But a malicious actor can read any file from the server using the vulnerable parameter `lang`, if there is no input validation and no directory specified in the `include` function. So an attacker can do:
+`http://webapp.thm/get.php?file=/etc/passwd`
