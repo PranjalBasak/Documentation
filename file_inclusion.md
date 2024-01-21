@@ -39,7 +39,7 @@ LFI is a vulnerability which allows attackers to retrive local files hosted in a
 
 LFI can occur in web applications written in PHP, ASP, JSP, or even Node.js. In PHP, some functions contribute to the vulnerability of web applications including `include`, `require`, `include_once`, and `require_once`.
 
-### Case 1:
+### Case 1: 
 Let's say we have an web app which can switch between English and Arabian language. The PHP code is written as follows:
 ```php
 <?PHP 
@@ -53,8 +53,31 @@ THE PHP code uses a GET request via the URL parameter `lang` to include the file
 But a malicious actor can read any file from the server using the vulnerable parameter `lang`, if there is no input validation and no directory specified in the `include` function. So an attacker can do:
 `http://webapp.thm/get.php?file=/etc/passwd`
 
-### Case 2:
+### Case 2: Bypass Invalid Extension
 Use Null Bytes if the PHP code is configured in such a way that it will only accept a certain extension (such as only .php). In this case, a sample payload would be:
 `http://webapp.thm/index.php?lang=../../../../etc/passwd%00`
 Null byte will tell the PHP code to ignore anything after the null byte including the extension.
 
+**NOTE:** the %00 trick is fixed and not working with PHP 5.3.4 and above.
+
+## Case 3: Bypass A Filtered Keyword (`/etc/passwd`)
+**Technique 1:** Use Null Bytes `%00`
+
+**Technique 2:** Use `/.` in front of filtered keyword
+
+## Case 4: Bypass A Filtered Keyword (Replaced `../` with Empty String)
+![image](https://github.com/PranjalBasak/Documentation/assets/66166653/3f5b7720-b831-4e08-99b7-fe58342cc5f5)
+
+## Case 5: Directory Specified
+Considering the directory `languages` is specified,
+Payload: `?lang=languages/../../../../../etc/passwd.`
+
+## Remote File Inclusion (RFI)
+RFI is an attack which allows an attacker to include remote files to the web application and execute malicious scripts in the server.
+
+In RFI, one can inject an external URL into `include` function. But one requirement is that `allow_url_fopen` option needs to be `on`. RFI is deadlier than LFI since it allows RCE on the server. Other consequences include:
+- Sensitive Information Disclosure
+- Cross-Site Scripting (XSS)
+- Denial of Service (DoS)
+
+![image](https://github.com/PranjalBasak/Documentation/assets/66166653/9ed4aa3d-d153-403e-8f01-abc62626637e)
