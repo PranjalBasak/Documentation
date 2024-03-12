@@ -12,3 +12,11 @@ Intel x86 -> Little Endian
 ARM -> Big Endian
 
 https://azeria-labs.com/arm-instruction-set-part-3/
+
+swi 0 means software interrupt
+
+### Kernel
+- r7 handles what we do
+- r0-r4 handles how we do it
+
+- arm 32 bit system call table
