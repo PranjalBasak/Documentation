@@ -8,4 +8,7 @@ ARM supports conditional Execution
 
 MNEMONIC{S}{condition} {Rd}, Operand1, Operand2
 
+Intel x86 -> Little Endian
+ARM -> Big Endian
+
 https://azeria-labs.com/arm-instruction-set-part-3/
