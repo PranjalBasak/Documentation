@@ -34,5 +34,5 @@ w0 = 32 bit
 CTFs
 Xoss List
 
-https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Reversing/ARMssembly0.md
-https://ctftime.org/writeup/26963
+- https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Reversing/ARMssembly0.md
+- https://ctftime.org/writeup/26963
