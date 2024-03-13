@@ -22,3 +22,5 @@ swi 0 means software interrupt
 - arm 32 bit system call table
 
 Generally, LDR is used to load something from memory into a register, and STR is used to store something from a register to a memory address.
+
+movk = move the immediate value but keep the previous
