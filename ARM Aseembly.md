@@ -24,3 +24,8 @@ swi 0 means software interrupt
 Generally, LDR is used to load something from memory into a register, and STR is used to store something from a register to a memory address.
 
 movk = move the immediate value but keep the previous
+
+intel x86 = rax(eax(ax(ah|al
+arm = x0(w0
+x0 = 64 bit
+w0 = 32 bit
