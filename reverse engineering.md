@@ -12,4 +12,5 @@ file <file>
 
 
 CTFS
-https://ctftime.org/writeup/26962
+- https://ctftime.org/writeup/26962
+- https://www.stackzero.net/gdb-baby-step-1/
