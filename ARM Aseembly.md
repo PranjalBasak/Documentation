@@ -29,3 +29,7 @@ intel x86 = rax(eax(ax(ah|al
 arm = x0(w0
 x0 = 64 bit
 w0 = 32 bit
+
+
+CTFs
+https://github.com/apoirrier/CTFs-writeups/blob/master/PicoCTF/Reversing/ARMssembly0.md
