@@ -27,6 +27,7 @@ Introductory/Recap: https://www.youtube.com/watch?v=nLp3hr6Jf2M
 Resources
 ----------------
 - https://0xinfection.github.io/reversing/
+- https://osandamalith.com/2019/02/11/linux-reverse-engineering-ctfs-for-beginners/
 
 
 CTFS
