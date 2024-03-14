@@ -10,6 +10,10 @@ Ghidra
 
 file <file>
 
+GDB
+----
+Introductory/Recap: https://www.youtube.com/watch?v=nLp3hr6Jf2M
+
 
 CTFS
 - https://ctftime.org/writeup/26962
