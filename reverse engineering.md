@@ -24,6 +24,9 @@ GDB
 - hexdump $rsp /10 : print 10 hexdump lines from stack pointer
 Introductory/Recap: https://www.youtube.com/watch?v=nLp3hr6Jf2M
 
+Resources
+----------------
+- https://0xinfection.github.io/reversing/
 
 
 CTFS
