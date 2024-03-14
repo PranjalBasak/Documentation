@@ -12,7 +12,15 @@ file <file>
 
 GDB
 ----
+- context
+- start
+- run
+- break main
+- break *(addr)
+- set $rip = addr
+- set $rip = main
 Introductory/Recap: https://www.youtube.com/watch?v=nLp3hr6Jf2M
+
 
 
 CTFS
