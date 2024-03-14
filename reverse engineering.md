@@ -19,6 +19,9 @@ GDB
 - break *(addr)
 - set $rip = addr
 - set $rip = main
+- skipi
+- x/20xg $rip : examine 20 giant(8bytes) in hexa format
+- 
 Introductory/Recap: https://www.youtube.com/watch?v=nLp3hr6Jf2M
 
 
