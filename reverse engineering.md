@@ -1,11 +1,13 @@
 tools
 
-`objdump -d <file>` -> disassembler
-gdb -> debugger
-binwalk -> examines binary images for embedded files
-IDA Pro
-Ghidra
+- `objdump -d <file>` -> disassembler
+- gdb -> debugger
+- binwalk -> examines binary images for embedded files
+- IDA Pro
+- Ghidra
 - `hexdump -C <file>`
+- `strace` : Traces Linux System Calls
+- `ltrace` : Traces Library Functions
 
 ![image](https://github.com/PranjalBasak/Documentation/assets/66166653/1f094477-97cc-416c-b13f-d74c54ac1a80)
 
