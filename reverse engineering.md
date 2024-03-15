@@ -32,6 +32,7 @@ Ghidra
 - RTTI Analyzer (Metadata)
 - WindowsPE Propagate External Parameters
 - You may consider shift deleting .text sections before analyzing the code in Ghidra
+- Main function has an exit code
   
 Resources
 ----------------
