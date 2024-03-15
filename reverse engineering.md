@@ -9,6 +9,8 @@ Ghidra
 ![image](https://github.com/PranjalBasak/Documentation/assets/66166653/1f094477-97cc-416c-b13f-d74c54ac1a80)
 
 file <file>
+- `set LOLO=HELLO` : Setting an environment variable
+- `set` : Shows all environment variables
 
 GDB
 ----
@@ -30,6 +32,7 @@ Ghidra
 - RTTI Analyzer (Metadata)
 - WindowsPE Propagate External Parameters
 - You may consider shift deleting .text sections before analyzing the code in Ghidra
+  
 Resources
 ----------------
 - https://0xinfection.github.io/reversing/
@@ -37,5 +40,6 @@ Resources
 
 
 CTFS
+----------
 - https://ctftime.org/writeup/26962
 - https://www.stackzero.net/gdb-baby-step-1/
