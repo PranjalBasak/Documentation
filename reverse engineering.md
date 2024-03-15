@@ -27,6 +27,7 @@ GDB
 - skipi
 - x/20xg $rip : examine 20 giant(8bytes) in hexa format
 - hexdump $rsp /10 : print 10 hexdump lines from stack pointer
+- set diassembly-flavor intel
 Introductory/Recap: https://www.youtube.com/watch?v=nLp3hr6Jf2M
 
 Ghidra
