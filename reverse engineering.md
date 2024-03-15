@@ -12,6 +12,9 @@ file <file>
 - `set LOLO=HELLO` : Setting an environment variable
 - `set` : Shows all environment variables
 
+![image](https://github.com/PranjalBasak/Documentation/assets/66166653/10a23952-db4c-4663-ad63-f16bec9c3165)
+
+
 GDB
 ----
 - context
