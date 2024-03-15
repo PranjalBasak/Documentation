@@ -1,6 +1,6 @@
 tools
 
-objdump -> disassembler
+`objdump -d <file>` -> disassembler
 gdb -> debugger
 binwalk -> examines binary images for embedded files
 IDA Pro
