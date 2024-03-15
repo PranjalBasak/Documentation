@@ -27,7 +27,7 @@ Introductory/Recap: https://www.youtube.com/watch?v=nLp3hr6Jf2M
 Ghidra
 -------------
 - Visual Studio contains PDB(Program Database) files that Ghidra get extra info [Solution: Unselect PDB while analyzing the code in Ghidra]
-- 
+- RTTI Analyzer (Metadata)
 Resources
 ----------------
 - https://0xinfection.github.io/reversing/
