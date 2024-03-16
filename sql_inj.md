@@ -140,7 +140,8 @@ Use “Response Received” column from intruder and use it to sort the characte
 
 New Learned
 --------------
-do_system
+do_system('whoami')
+LOAD_FILE('/etc/passwd')
 
 ## CheatSheets
 * [Portswigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
