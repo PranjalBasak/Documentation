@@ -138,6 +138,9 @@ https://www.youtube.com/watch?v=LBG_n9fr8sM
 
 Use “Response Received” column from intruder and use it to sort the characters that took the most time
 
+New Learned
+--------------
+do_system
 
 ## CheatSheets
 * [Portswigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
