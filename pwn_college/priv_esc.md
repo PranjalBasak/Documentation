@@ -12,3 +12,5 @@ split
 base32
 base64
 gzip/gunzip
+bzip2/bzcat
+zip/unzip
