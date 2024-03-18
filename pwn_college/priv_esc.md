@@ -6,3 +6,4 @@ vim
 rev
 sort
 od
+hd
