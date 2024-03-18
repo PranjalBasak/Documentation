@@ -11,14 +11,13 @@
  
 ```php
 <?php
-// Online PHP compiler to run PHP program online
-// Print "Try programiz.pro" message
+// Directory Iteration Code
 $dir = new RecursiveDirectoryIterator('/tmp');
 $itr = new RecursiveIteratorIterator($dir);
 foreach($itr as $file => $key){
     echo $file."\n";
 }
-echo readfile('/var/log/faillog');
+echo readfile('/var/log/faillog'); // Reads file
 
 ?>
 ```
