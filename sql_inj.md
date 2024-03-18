@@ -1,7 +1,7 @@
 ## Payloads
-```
-select id from demo where name='test' and extractvalue(1, concat(0x7c, (select schema_name from information_Schema.schemata limit 1,1) ) )-- -'
-```
+- `select id from demo where name='test' and extractvalue(1, concat(0x7c, (select schema_name from information_Schema.schemata limit 1,1) ) )-- -'`  : only mysql/mariadb
+- `do_system('whoami')` : Run a system command
+- `LOAD_FILE('/etc/passwd')` : Read a file
 
 
 ## Common tools¶
@@ -146,8 +146,7 @@ Use “Response Received” column from intruder and use it to sort the characte
 
 New Learned
 --------------
-do_system('whoami')
-LOAD_FILE('/etc/passwd')
+
 
 ## CheatSheets
 * [Portswigger](https://portswigger.net/web-security/sql-injection/cheat-sheet)
