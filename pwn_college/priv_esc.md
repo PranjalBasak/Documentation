@@ -7,3 +7,4 @@ rev
 sort
 od
 hd
+xxd
