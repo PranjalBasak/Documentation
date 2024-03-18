@@ -8,6 +8,20 @@
      -  https://notsosecure.com/sql-injection-lab
      -  https://sqliteonline.com/
      -  https://github.com/thorleifjacobsen/ctf/tree/master/1753ctf-2024/web-flag-vault
+ 
+```php
+<?php
+// Online PHP compiler to run PHP program online
+// Print "Try programiz.pro" message
+$dir = new RecursiveDirectoryIterator('/tmp');
+$itr = new RecursiveIteratorIterator($dir);
+foreach($itr as $file => $key){
+    echo $file."\n";
+}
+echo readfile('/var/log/faillog');
+
+?>
+```
 
 
 ## Common tools¶
