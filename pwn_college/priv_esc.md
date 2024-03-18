@@ -11,3 +11,4 @@ xxd
 split
 base32
 base64
+gzip/gunzip
