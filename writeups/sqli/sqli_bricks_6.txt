@@ -30,35 +30,7 @@ ron	| ron	   |
 -----------------------
 HARRY	| 5f4dcc3b5aa765d61d8327deb882cf99 === After Cracking MD5 Hash -> password
 
-1 5
-2 f
-3 4
-4 d
-5 c
-6 c
-7 3
-8 b
-9 5
-10 a
-11 a
-12 7
-13 6
-14 5
-15 d
-16 6
-17 1
-18 d
-19 8
-20 3
-21 2
-22 7
-23 d
-24 e
-25 b
-26 8
-27 8
-28 2
-29 c
-30 f
-31 9
-32 9
+The Website provided a hint about using MD5 hash. So after trying,
+username = HARRY
+password = password
+We can successfully log in.
