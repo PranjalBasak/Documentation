@@ -7,6 +7,7 @@
      -  https://www.programiz.com/php/online-compiler/
      -  https://notsosecure.com/sql-injection-lab
      -  https://sqliteonline.com/
+     -  https://sqlable.com/
      -  https://github.com/thorleifjacobsen/ctf/tree/master/1753ctf-2024/web-flag-vault
  
 ```php
