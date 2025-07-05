@@ -7,6 +7,11 @@
 - Web Scrapping with Python
     - [Scripting with Request Library](#requests-library)
 
+- Working with Windows PE Files, DLLs, Developing Malware etc
+    - [pefiles library](#pefile-library)
+    - [Capstone Engine](#capstone-engine-library)
+    - [Working with Hex/Int/Bytes](#working-with-hexintbytes)
+
 
 
 # File Handling
@@ -198,4 +203,74 @@ proxies = {
 response = requests.get("http://httpbin.org/get", proxies=proxies)
 print(response.text)
 ```
+
+<hr><br><br><br><br><br>
+
+
+# pefile library
+## Necessary Functions
+### pefile.PE(file_path)
+Load the PE file
+Example: `pe = pefile.PE(r"C:\Users\vboxuser\projects\capstone-proj-1\benign_hello_world.exe")`
+You can even print it and see some real cool stuff
+### pe.get_data()
+
+`get_data`(_rva=0_, _length=None_)[](https://pefile.readthedocs.io/en/latest/modules/pefile.html#pefile.PE.get_data "Permalink to this definition")
+
+
+Get data regardless of its section.
+
+Given a RVA and the size of the chunk to retrieve, this method will find the section where the data lies and return the data.
+`get_data()` retrieves the whole section.
+
+
+## Necessary Values
+- Entry Point of the program (RVA) -> `pe.OPTIONAL_HEADER.AddressOfEntryPoint` 
+- Where the binary exe is loaded in memory (VA) -> `pe.OPTIONAL_HEADER.ImageBase`
+- Code Section Base Address (RVA) -> `pe.OPTIONAL_HEADER.BaseOfCode`
+
+<hr><br><br><br><br><br>
+
+# Capstone-Engine Library
+## Necessary Functions
+- `disassembler = Cs(CS_ARCH_X86, CS_MODE_32)` -> Initialize the disassembler for x86 32bit system
+
+
+
+<hr><br><br><br><br><br>
+
+
+
+
+
+
+# Working With Hex/Int/Bytes
+# hex to ascii
+```python
+n.to_bytes(3, byteorder="little").decode()
+```
+
+## More work with hex/int/bytes
+```python
+
+>>> n.to_bytes(2, byteorder="little")
+b'\xa5\x19'
+
+
+>>> b = bytes.fromhex("414243")
+... print(b)          # b'ABC'
+...
+b'ABC'
+
+
+>>> n=0x414243
+>>> n.to_bytes(3, byteorder="little")
+b'CBA'
+
+
+>>> n.to_bytes(3, byteorder="big")
+b'ABC'
+
+```
+
 
