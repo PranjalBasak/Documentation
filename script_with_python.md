@@ -1,5 +1,14 @@
 [Black Hat Python](https://github.com/EONRaider/blackhat-python3)
 
+# Table of Contents
+
+- [File Handling with Python](#file-handling) 
+- [Python OS Module](#os-module)
+- Web Scrapping with Python
+    - [Scripting with Request Library](#requests-library)
+
+
+
 # File Handling
 ## Read
 ### Read The Whole File At Once

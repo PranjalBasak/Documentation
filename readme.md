@@ -3,6 +3,9 @@
 - [PayloadOfAllThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master)
 - [PayloadBox](https://github.com/payloadbox)
 
+## /Scripts
+- [Scripting With Python](script_with_python.md)
+
 ## /CTF 
 * [CTF Dojo](ctfdojo.md)
 * [My CTF Journey](my_ctf_journey.md)
@@ -60,7 +63,7 @@ This last will convert all the python files that are in the directory.
 - [Terminal Shorcuts](https://github.com/PranjalBasak/Documentation/blob/main/Linux_Shortcuts.md)
 
 ## /Web Tools
-- [Tools](webtools.md) | [Scripting With Python](script_with_python.md)
+- [Tools](webtools.md) | 
 
 
 
