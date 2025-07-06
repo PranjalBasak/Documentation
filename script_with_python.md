@@ -13,6 +13,8 @@
     - [Working with Hex/Int/Bytes](#working-with-hexintbytes)
 
 
+<hr><br><br><br><br><br>
+
 
 # File Handling
 ## Read
@@ -32,6 +34,8 @@ with open(r"D:\bloop\file1.txt.txt", "r") as f:
 ```python3
 f.readlines()
 ```
+
+<hr><br><br><br><br><br>
 
 # OS Module
 [Full List of Methods and Constants](https://www.w3schools.com/python/module_os.asp)
@@ -98,7 +102,8 @@ os.system("ls -l")
 
 Remember that when dealing with file paths, it's a good practice to use `os.path.join()` to ensure portability across different operating systems.
 
-Certainly! Here are the formatted code snippets for your GitHub repository:
+<hr><br><br><br><br><br>
+
 
 # Requests Library
 **Code 1: Basic Get Request**
@@ -271,6 +276,90 @@ b'CBA'
 >>> n.to_bytes(3, byteorder="big")
 b'ABC'
 
+```
+
+## From Hex String to Bytes and Converting Back to Hex String
+
+```python
+>>> a="6734127789" # Hex String
+>>> len(a)
+10
+>>> bytes.fromhex(a) # Raw Bytes
+b'g4\x12w\x89'
+>>> b = bytes.fromhex(a)
+>>> b.hex() # Convert Back to Hex String
+'6734127789'
+```
+
+## Extracting Bytes From An Encrypted Hex String and Decrypting Them As A List Item
+
+```python
+>>> encrypted="deadbeef" # Suppose, 0xdeadbeef is a super secret encrypted ciphertext
+>>> b=bytes.fromhex(encrypted)
+>>> b
+b'\xde\xad\xbe\xef' # Now they are raw bytes
+>>> m=map(hex, list(b)) # map() will take a function and run it over a list. here, list(b)
+>>> list(m)
+['0xde', '0xad', '0xbe', '0xef']
+```
+
+
+# Malware Obfuscation 
+## Very Stupid Obfuscation - Manual
+
+```python
+from keystone import *
+
+# Choose architecture + mode
+ks = Ks(KS_ARCH_X86, KS_MODE_32)
+
+# Original instructions
+orig_code = "xor eax, eax; mov ebx, eax"
+
+# Assemble original code
+encoding, count = ks.asm(orig_code)
+
+print("Original code bytes:")
+print(bytes(encoding).hex())
+
+
+# Obfuscated Code
+new_code = "pushfd; xor eax, eax; popfd; push eax; pop ebx"
+
+encoding2, count2 = ks.asm(new_code)
+
+print("Obfuscated code bytes:")
+print(bytes(encoding2).hex())
+
+
+# Checking
+if len(encoding) == len(encoding2):
+    print("Same size, safe replacement!")
+else:
+    print("Different size! Watch your offsets!")
+```
+
+
+# Quick And Dirty Script (Will Be Moved Later)
+
+```python
+>>> y="big" if x > 10 else "small"
+>>> y
+'big'
+>>> a = [1, 2, 3]
+>>> a
+[1, 2, 3]
+>>> b=10 if len(a)>3 else 5
+>>> b
+5
+>>> range(16)
+range(0, 16)
+>>> bytes(range(16))
+b'\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f'
+>>> bytes(range(16)).hex()
+'000102030405060708090a0b0c0d0e0f'
+>>> print(" ".join(f"{b:02x}" for b in range(16)))
+00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f
 ```
 
 
